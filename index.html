@@ -15,10 +15,6 @@
 
   <style>
 
-    /* =====================================
-       BASIC
-    ===================================== */
-
     * {
       box-sizing: border-box;
     }
@@ -40,9 +36,7 @@
         sans-serif;
 
       color: white;
-
-      background:
-        #071426;
+      background: #071426;
     }
 
     body.modal-open {
@@ -50,37 +44,22 @@
     }
 
 
-    /* =====================================
-       PARALLAX
-    ===================================== */
-
     .parallax-area {
       position: relative;
-
       height: 340vh;
     }
 
 
-    /* =====================================
-       SKY
-    ===================================== */
-
     .sky-layer {
       position: fixed;
-
       inset: 0;
-
       z-index: 0;
-
       pointer-events: none;
-
-      will-change:
-        opacity;
+      will-change: opacity;
     }
 
 
     .sky-day {
-
       background:
         linear-gradient(
           to bottom,
@@ -94,7 +73,6 @@
 
 
     .sky-sunset {
-
       background:
         linear-gradient(
           to bottom,
@@ -110,7 +88,6 @@
 
 
     .sky-night {
-
       background:
         linear-gradient(
           to bottom,
@@ -123,22 +100,14 @@
     }
 
 
-    /* =====================================
-       SUN
-    ===================================== */
-
     .sun {
-
       position: fixed;
 
       width: 240px;
-
       max-width: none;
-
       height: auto;
 
       top: 2%;
-
       right: -25px;
 
       z-index: 1;
@@ -160,22 +129,14 @@
     }
 
 
-    /* =====================================
-       MOON
-    ===================================== */
-
     .moon {
-
       position: fixed;
 
       width: 210px;
-
       max-width: none;
-
       height: auto;
 
       top: 5%;
-
       left: -20px;
 
       opacity: 0;
@@ -198,12 +159,7 @@
     }
 
 
-    /* =====================================
-       STARS
-    ===================================== */
-
     .stars {
-
       position: fixed;
 
       inset: 0;
@@ -228,22 +184,15 @@
     }
 
 
-    /* =====================================
-       CLOUDS
-    ===================================== */
-
     .clouds-wrapper {
-
       position: fixed;
 
       top: 5%;
-
       left: 0;
 
       width: 100%;
 
       display: flex;
-
       justify-content: center;
 
       z-index: 2;
@@ -257,33 +206,21 @@
     }
 
     .clouds {
-
       display: block;
-
       width: 150%;
-
       max-width: none;
-
       height: auto;
     }
 
 
-    /* =====================================
-       BACKGROUND
-    ===================================== */
-
     .background-wrapper {
-
       position: fixed;
 
       left: 0;
-
       right: 0;
-
       bottom: 16%;
 
       display: flex;
-
       justify-content: center;
 
       z-index: 3;
@@ -298,33 +235,22 @@
 
 
     .school-background {
-
       display: block;
 
       width: 165%;
-
       max-width: none;
-
       height: auto;
     }
 
 
-    /* =====================================
-       SCHOOL
-    ===================================== */
-
     .school-wrapper {
-
       position: fixed;
 
       left: 0;
-
       right: 0;
-
       bottom: -20px;
 
       display: flex;
-
       justify-content: center;
 
       z-index: 4;
@@ -339,33 +265,22 @@
 
 
     .school {
-
       display: block;
 
       width: 118%;
-
       max-width: none;
-
       height: auto;
     }
 
 
-    /* =====================================
-       GIRL
-    ===================================== */
-
     .audience-wrapper {
-
       position: fixed;
 
       left: 0;
-
       right: 0;
-
       bottom: 0;
 
       display: flex;
-
       justify-content: center;
 
       z-index: 5;
@@ -382,31 +297,21 @@
 
 
     .audience {
-
       display: block;
 
       width: 145%;
-
       max-width: none;
-
       height: auto;
     }
 
 
-    /* =====================================
-       COMMON SECTION
-    ===================================== */
-
     .section {
-
       position: relative;
 
       height: 100vh;
 
       display: flex;
-
       justify-content: center;
-
       align-items: center;
 
       text-align: center;
@@ -416,36 +321,25 @@
 
 
     .content {
-
       position: relative;
 
       z-index: 9;
 
       width: 100%;
-
       max-width: 900px;
 
-      padding:
-        25px;
+      padding: 25px;
     }
 
 
-    /* =====================================
-       TOP LOGO
-    ===================================== */
-
     .apricot-logo {
-
       display: block;
 
       width: 92%;
-
       max-width: 650px;
-
       height: auto;
 
-      margin:
-        0 auto;
+      margin: 0 auto;
 
       object-fit: contain;
 
@@ -467,26 +361,17 @@
 
       0%,
       100% {
-
-        transform:
-          translateY(0);
+        transform: translateY(0);
       }
 
       50% {
-
-        transform:
-          translateY(-8px);
+        transform: translateY(-8px);
       }
 
     }
 
 
-    /* =====================================
-       COMMON REVEAL
-    ===================================== */
-
     .reveal-item {
-
       opacity: 0;
 
       transform:
@@ -497,53 +382,31 @@
 
       transition:
         opacity 0.75s
-        cubic-bezier(
-          0.22,
-          1,
-          0.36,
-          1
-        ),
+        cubic-bezier(0.22,1,0.36,1),
 
         transform 0.75s
-        cubic-bezier(
-          0.22,
-          1,
-          0.36,
-          1
-        ),
+        cubic-bezier(0.22,1,0.36,1),
 
         filter 0.75s ease;
     }
 
 
     .reveal-item.reveal {
-
       opacity: 1;
-
-      transform:
-        translateY(0);
-
-      filter:
-        blur(0);
+      transform: translateY(0);
+      filter: blur(0);
     }
 
 
-    /* =====================================
-       MEMORIES
-    ===================================== */
-
     .memories-content {
-
       position: relative;
 
       z-index: 9;
 
       width: 100%;
-
       max-width: 900px;
 
-      margin:
-        auto;
+      margin: auto;
 
       padding:
         20px 8px;
@@ -551,28 +414,19 @@
 
 
     .section-eyebrow {
+      margin-bottom: 7px;
 
-      margin-bottom:
-        7px;
+      font-size: 12px;
+      font-weight: bold;
 
-      font-size:
-        12px;
+      letter-spacing: 6px;
 
-      font-weight:
-        bold;
-
-      letter-spacing:
-        6px;
-
-      opacity:
-        0.75;
+      opacity: 0.75;
     }
 
 
     .memories-title {
-
-      margin:
-        0;
+      margin: 0;
 
       font-size:
         clamp(
@@ -581,40 +435,28 @@
           68px
         );
 
-      line-height:
-        1;
+      line-height: 1;
 
-      letter-spacing:
-        5px;
+      letter-spacing: 5px;
     }
 
 
     .memories-subtitle {
-
       margin:
         10px 0 18px;
 
-      font-size:
-        11px;
+      font-size: 11px;
 
-      letter-spacing:
-        3px;
+      letter-spacing: 3px;
 
-      opacity:
-        0.7;
+      opacity: 0.7;
     }
 
 
-    /* =====================================
-       MEMORY COLLAGE
-    ===================================== */
-
     .memory-collage {
-
       position: relative;
 
       width: 100%;
-
       max-width: 720px;
 
       height:
@@ -624,13 +466,11 @@
           600px
         );
 
-      margin:
-        0 auto;
+      margin: 0 auto;
     }
 
 
     .memory-photo {
-
       position: absolute;
 
       width: 30%;
@@ -665,7 +505,6 @@
 
 
     .memory-photo img {
-
       display: block;
 
       width: 100%;
@@ -678,177 +517,101 @@
     }
 
 
-    /* =====================================
-       MEMORY POSITIONS
-    ===================================== */
-
     .memory-photo:nth-child(1) {
-
       left: 2%;
-
       top: 4%;
-
-      --rotate:
-        -8deg;
+      --rotate: -8deg;
     }
-
 
     .memory-photo:nth-child(2) {
-
       left: 35%;
-
       top: 0;
-
-      --rotate:
-        5deg;
+      --rotate: 5deg;
     }
-
 
     .memory-photo:nth-child(3) {
-
       right: 2%;
-
       top: 7%;
-
-      --rotate:
-        -4deg;
+      --rotate: -4deg;
     }
-
 
     .memory-photo:nth-child(4) {
-
       left: 8%;
-
       top: 35%;
-
-      --rotate:
-        6deg;
+      --rotate: 6deg;
     }
-
 
     .memory-photo:nth-child(5) {
-
       left: 38%;
-
       top: 29%;
-
-      --rotate:
-        -7deg;
+      --rotate: -7deg;
     }
-
 
     .memory-photo:nth-child(6) {
-
       right: 5%;
-
       top: 37%;
-
-      --rotate:
-        8deg;
+      --rotate: 8deg;
     }
-
 
     .memory-photo:nth-child(7) {
-
       left: 1%;
-
       top: 68%;
-
-      --rotate:
-        -5deg;
+      --rotate: -5deg;
     }
-
 
     .memory-photo:nth-child(8) {
-
       left: 25%;
-
       top: 63%;
-
-      --rotate:
-        7deg;
+      --rotate: 7deg;
     }
-
 
     .memory-photo:nth-child(9) {
-
       left: 50%;
-
       top: 66%;
-
-      --rotate:
-        -3deg;
+      --rotate: -3deg;
     }
-
 
     .memory-photo:nth-child(10) {
-
       right: 0;
-
       top: 62%;
-
-      --rotate:
-        6deg;
+      --rotate: 6deg;
     }
 
 
-    /* =====================================
-       SILENCE / NIGHT
-    ===================================== */
-
     .silence-section {
-
       position: relative;
-
       height: 40vh;
-
       z-index: 8;
-
       pointer-events: none;
     }
 
 
-    /* =====================================
-       APRICOT NIGHT
-    ===================================== */
-
     .headliner-content {
-
       position: relative;
 
       z-index: 9;
 
       width: 100%;
-
       max-width: 700px;
 
-      margin:
-        auto;
+      margin: auto;
 
       padding:
         30px 20px;
 
-      text-align:
-        center;
+      text-align: center;
     }
 
 
     .headliner-small {
+      margin-bottom: 10px;
 
-      margin-bottom:
-        10px;
+      font-size: 12px;
+      font-weight: bold;
 
-      font-size:
-        12px;
+      letter-spacing: 7px;
 
-      font-weight:
-        bold;
-
-      letter-spacing:
-        7px;
-
-      opacity:
-        0;
+      opacity: 0;
 
       transform:
         translateY(20px);
@@ -862,9 +625,7 @@
 
 
     .headliner-title {
-
-      margin:
-        0;
+      margin: 0;
 
       font-size:
         clamp(
@@ -873,14 +634,11 @@
           100px
         );
 
-      line-height:
-        0.95;
+      line-height: 0.95;
 
-      letter-spacing:
-        4px;
+      letter-spacing: 4px;
 
-      opacity:
-        0;
+      opacity: 0;
 
       transform:
         scale(0.92);
@@ -891,12 +649,7 @@
       transition:
         opacity 1.1s ease,
         transform 1.1s
-        cubic-bezier(
-          0.22,
-          1,
-          0.36,
-          1
-        ),
+        cubic-bezier(0.22,1,0.36,1),
         filter 1.1s ease;
 
       text-shadow:
@@ -906,7 +659,6 @@
 
 
     .headliner-title span {
-
       background:
         linear-gradient(
           90deg,
@@ -925,8 +677,7 @@
       background-clip:
         text;
 
-      color:
-        transparent;
+      color: transparent;
 
       animation:
         titleGlow
@@ -939,13 +690,11 @@
     @keyframes titleGlow {
 
       from {
-
         background-position:
           0% center;
       }
 
       to {
-
         background-position:
           200% center;
       }
@@ -954,21 +703,16 @@
 
 
     .headliner-copy {
-
       margin:
         24px auto 0;
 
-      font-size:
-        14px;
+      font-size: 14px;
 
-      line-height:
-        1.8;
+      line-height: 1.8;
 
-      letter-spacing:
-        3px;
+      letter-spacing: 3px;
 
-      opacity:
-        0;
+      opacity: 0;
 
       transform:
         translateY(24px);
@@ -982,20 +726,15 @@
 
 
     .headliner-stats {
-
       display: flex;
 
-      justify-content:
-        center;
+      justify-content: center;
 
-      gap:
-        12px;
+      gap: 12px;
 
-      margin-top:
-        27px;
+      margin-top: 27px;
 
-      opacity:
-        0;
+      opacity: 0;
 
       transform:
         translateY(24px);
@@ -1009,12 +748,9 @@
 
 
     .headliner-stat {
+      flex: 1;
 
-      flex:
-        1;
-
-      max-width:
-        150px;
+      max-width: 150px;
 
       padding:
         13px 5px;
@@ -1030,53 +766,36 @@
 
 
     .stat-number {
+      display: block;
 
-      display:
-        block;
+      font-size: 24px;
 
-      font-size:
-        24px;
-
-      font-weight:
-        bold;
+      font-weight: bold;
     }
 
 
     .stat-label {
+      display: block;
 
-      display:
-        block;
+      margin-top: 4px;
 
-      margin-top:
-        4px;
+      font-size: 9px;
 
-      font-size:
-        9px;
+      letter-spacing: 2px;
 
-      letter-spacing:
-        2px;
-
-      opacity:
-        0.65;
+      opacity: 0.65;
     }
 
 
     .artists-cta {
+      display: inline-flex;
 
-      display:
-        inline-flex;
+      align-items: center;
+      justify-content: center;
 
-      align-items:
-        center;
+      gap: 13px;
 
-      justify-content:
-        center;
-
-      gap:
-        13px;
-
-      margin-top:
-        33px;
+      margin-top: 33px;
 
       padding:
         15px 27px;
@@ -1091,26 +810,19 @@
       background:
         rgba(0,0,0,0.18);
 
-      color:
-        white;
+      color: white;
 
-      text-decoration:
-        none;
+      text-decoration: none;
 
-      font-size:
-        12px;
+      font-size: 12px;
+      font-weight: bold;
 
-      font-weight:
-        bold;
-
-      letter-spacing:
-        3px;
+      letter-spacing: 3px;
 
       backdrop-filter:
         blur(8px);
 
-      opacity:
-        0;
+      opacity: 0;
 
       transform:
         translateY(24px);
@@ -1134,76 +846,48 @@
 
     .night-content-visible
     .artists-cta {
-
-      opacity:
-        1;
-
-      transform:
-        translateY(0);
-
-      filter:
-        blur(0);
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
     }
 
 
     .night-content-visible
     .headliner-title {
-
-      opacity:
-        1;
-
-      transform:
-        scale(1);
-
-      filter:
-        blur(0);
+      opacity: 1;
+      transform: scale(1);
+      filter: blur(0);
     }
 
 
     .night-content-visible
     .headliner-small {
-
-      transition-delay:
-        0.10s;
+      transition-delay: 0.10s;
     }
-
 
     .night-content-visible
     .headliner-title {
-
-      transition-delay:
-        0.25s;
+      transition-delay: 0.25s;
     }
-
 
     .night-content-visible
     .headliner-copy {
-
-      transition-delay:
-        0.45s;
+      transition-delay: 0.45s;
     }
-
 
     .night-content-visible
     .headliner-stats {
-
-      transition-delay:
-        0.65s;
+      transition-delay: 0.65s;
     }
-
 
     .night-content-visible
     .artists-cta {
-
-      transition-delay:
-        0.85s;
+      transition-delay: 0.85s;
     }
 
 
     .cta-arrow {
-
-      display:
-        inline-block;
+      display: inline-block;
 
       animation:
         arrowBounce
@@ -1217,13 +901,11 @@
 
       0%,
       100% {
-
         transform:
           translateY(-3px);
       }
 
       50% {
-
         transform:
           translateY(4px);
       }
@@ -1231,20 +913,12 @@
     }
 
 
-    /* =====================================
-       ARTIST SECTION
-    ===================================== */
-
     .artists-section {
+      position: relative;
 
-      position:
-        relative;
+      z-index: 20;
 
-      z-index:
-        20;
-
-      min-height:
-        100vh;
+      min-height: 100vh;
 
       padding:
         55px 18px 110px;
@@ -1259,12 +933,10 @@
 
 
     .artists-title {
-
       margin:
         0 0 8px;
 
-      text-align:
-        center;
+      text-align: center;
 
       font-size:
         clamp(
@@ -1273,72 +945,50 @@
           52px
         );
 
-      letter-spacing:
-        8px;
+      letter-spacing: 8px;
     }
 
 
     .artists-caption {
-
       margin:
         0 0 38px;
 
-      text-align:
-        center;
+      text-align: center;
 
-      font-size:
-        11px;
+      font-size: 11px;
 
-      letter-spacing:
-        3px;
+      letter-spacing: 3px;
 
-      opacity:
-        0.55;
+      opacity: 0.55;
     }
 
 
     .artists-grid {
-
-      display:
-        grid;
+      display: grid;
 
       grid-template-columns:
         1fr;
 
-      width:
-        100%;
+      width: 100%;
+      max-width: 620px;
 
-      max-width:
-        620px;
-
-      margin:
-        0 auto;
+      margin: 0 auto;
     }
 
 
-    /* =====================================
-       ARTIST CARD
-    ===================================== */
-
     .artist-card {
-
       --accent:
         #ffb98e;
 
-      position:
-        relative;
+      position: relative;
 
-      width:
-        100%;
+      width: 100%;
 
-      overflow:
-        hidden;
+      overflow: hidden;
 
-      border-radius:
-        18px;
+      border-radius: 18px;
 
-      cursor:
-        pointer;
+      cursor: pointer;
 
       background:
         linear-gradient(
@@ -1358,8 +1008,7 @@
       backdrop-filter:
         blur(10px);
 
-      opacity:
-        0;
+      opacity: 0;
 
       transform:
         translateY(42px)
@@ -1371,55 +1020,34 @@
       transition:
         opacity 0.75s ease,
         transform 0.75s
-        cubic-bezier(
-          0.22,
-          1,
-          0.36,
-          1
-        ),
+        cubic-bezier(0.22,1,0.36,1),
         filter 0.75s ease;
     }
 
 
     .artist-card.reveal {
-
-      opacity:
-        1;
-
+      opacity: 1;
       transform:
         translateY(0)
         scale(1);
-
-      filter:
-        blur(0);
+      filter: blur(0);
     }
 
 
     .artist-card::before {
+      content: "";
 
-      content:
-        "";
+      position: absolute;
 
-      position:
-        absolute;
+      left: 12%;
+      right: 12%;
+      bottom: 0;
 
-      left:
-        12%;
+      height: 2px;
 
-      right:
-        12%;
+      z-index: 5;
 
-      bottom:
-        0;
-
-      height:
-        2px;
-
-      z-index:
-        5;
-
-      border-radius:
-        999px;
+      border-radius: 999px;
 
       background:
         var(--accent);
@@ -1428,73 +1056,51 @@
         0 0 15px
         var(--accent);
 
-      opacity:
-        0.75;
+      opacity: 0.75;
     }
 
 
     .artist-image {
+      position: relative;
 
-      position:
-        relative;
-
-      width:
-        100%;
+      width: 100%;
 
       aspect-ratio:
         16 / 10;
 
-      overflow:
-        hidden;
+      overflow: hidden;
 
-      background:
-        #111;
+      background: #111;
     }
 
 
     .artist-image img {
+      display: block;
 
-      display:
-        block;
+      width: 100%;
+      height: 100%;
 
-      width:
-        100%;
-
-      height:
-        100%;
-
-      object-fit:
-        cover;
+      object-fit: cover;
 
       transition:
         transform 0.6s
-        cubic-bezier(
-          0.22,
-          1,
-          0.36,
-          1
-        );
+        cubic-bezier(0.22,1,0.36,1);
     }
 
 
     .artist-card:active
     .artist-image img {
-
       transform:
         scale(1.04);
     }
 
 
     .artist-image::after {
+      content: "";
 
-      content:
-        "";
+      position: absolute;
 
-      position:
-        absolute;
-
-      inset:
-        0;
+      inset: 0;
 
       background:
         linear-gradient(
@@ -1507,18 +1113,12 @@
 
 
     .artist-genre-tag {
+      position: absolute;
 
-      position:
-        absolute;
+      top: 10px;
+      right: 10px;
 
-      top:
-        10px;
-
-      right:
-        10px;
-
-      z-index:
-        3;
+      z-index: 3;
 
       padding:
         6px 9px;
@@ -1536,43 +1136,28 @@
       backdrop-filter:
         blur(8px);
 
-      font-size:
-        9px;
+      font-size: 9px;
+      font-weight: bold;
 
-      font-weight:
-        bold;
-
-      letter-spacing:
-        1px;
+      letter-spacing: 1px;
     }
 
 
     .artist-overlay {
+      position: absolute;
 
-      position:
-        absolute;
+      left: 16px;
+      right: 16px;
+      bottom: 14px;
 
-      left:
-        16px;
+      z-index: 3;
 
-      right:
-        16px;
-
-      bottom:
-        14px;
-
-      z-index:
-        3;
-
-      text-align:
-        left;
+      text-align: left;
     }
 
 
     .artist-name {
-
-      margin:
-        0;
+      margin: 0;
 
       font-size:
         clamp(
@@ -1581,11 +1166,9 @@
           38px
         );
 
-      font-weight:
-        800;
+      font-weight: 800;
 
-      letter-spacing:
-        2px;
+      letter-spacing: 2px;
 
       text-shadow:
         0 3px 10px
@@ -1594,25 +1177,18 @@
 
 
     .artist-info {
-
       padding:
         15px 16px 18px;
 
-      text-align:
-        left;
+      text-align: left;
     }
 
 
     .artist-track-label {
+      font-size: 8px;
+      font-weight: bold;
 
-      font-size:
-        8px;
-
-      font-weight:
-        bold;
-
-      letter-spacing:
-        2.5px;
+      letter-spacing: 2.5px;
 
       color:
         var(--accent);
@@ -1620,73 +1196,50 @@
 
 
     .artist-track-name {
+      margin-top: 5px;
 
-      margin-top:
-        5px;
+      font-size: 14px;
 
-      font-size:
-        14px;
-
-      font-weight:
-        bold;
+      font-weight: bold;
     }
 
 
     .artist-open {
-
-      display:
-        flex;
+      display: flex;
 
       justify-content:
         space-between;
 
-      margin-top:
-        12px;
+      margin-top: 12px;
 
-      padding-top:
-        10px;
+      padding-top: 10px;
 
       border-top:
         1px solid
         rgba(255,255,255,0.10);
 
-      font-size:
-        8px;
+      font-size: 8px;
+      font-weight: bold;
 
-      font-weight:
-        bold;
+      letter-spacing: 2px;
 
-      letter-spacing:
-        2px;
-
-      opacity:
-        0.55;
+      opacity: 0.55;
     }
 
 
-    /* =====================================
-       FULLSCREEN ARTIST MODAL
-    ===================================== */
-
     .artist-modal {
-
       --modal-accent:
         #ffb98e;
 
-      position:
-        fixed;
+      position: fixed;
 
-      inset:
-        0;
+      inset: 0;
 
-      z-index:
-        1000;
+      z-index: 1000;
 
-      display:
-        none;
+      display: none;
 
-      overflow-y:
-        auto;
+      overflow-y: auto;
 
       background:
         #050914;
@@ -1697,9 +1250,7 @@
 
 
     .artist-modal.show {
-
-      display:
-        block;
+      display: block;
 
       animation:
         modalFade
@@ -1711,30 +1262,22 @@
     @keyframes modalFade {
 
       from {
-
-        opacity:
-          0;
+        opacity: 0;
       }
 
       to {
-
-        opacity:
-          1;
+        opacity: 1;
       }
 
     }
 
 
     .modal-bg {
+      position: fixed;
 
-      position:
-        fixed;
+      inset: 0;
 
-      inset:
-        0;
-
-      z-index:
-        0;
+      z-index: 0;
 
       background:
         #050914;
@@ -1747,7 +1290,6 @@
 
     .artist-modal.music-active
     .modal-bg {
-
       filter:
         brightness(0.55);
 
@@ -1757,68 +1299,47 @@
 
 
     .modal-close {
+      position: fixed;
 
-      position:
-        fixed;
+      top: 18px;
+      right: 18px;
 
-      top:
-        18px;
+      z-index: 1200;
 
-      right:
-        18px;
-
-      z-index:
-        1200;
-
-      width:
-        48px;
-
-      height:
-        48px;
+      width: 48px;
+      height: 48px;
 
       border:
         1px solid
         rgba(255,255,255,0.25);
 
-      border-radius:
-        50%;
+      border-radius: 50%;
 
       background:
         rgba(5,10,20,0.55);
 
-      color:
-        white;
+      color: white;
 
-      font-size:
-        28px;
+      font-size: 28px;
 
       backdrop-filter:
         blur(12px);
 
-      cursor:
-        pointer;
+      cursor: pointer;
     }
 
 
     .modal-inner {
+      position: relative;
 
-      position:
-        relative;
+      z-index: 2;
 
-      z-index:
-        2;
+      width: 100%;
+      max-width: 950px;
 
-      width:
-        100%;
+      min-height: 100vh;
 
-      max-width:
-        950px;
-
-      min-height:
-        100vh;
-
-      margin:
-        0 auto;
+      margin: 0 auto;
 
       padding:
         0 0 100px;
@@ -1826,56 +1347,37 @@
 
 
     .modal-hero {
+      position: relative;
 
-      position:
-        relative;
+      width: 100%;
 
-      width:
-        100%;
+      min-height: 68vh;
 
-      min-height:
-        68vh;
+      display: flex;
+      align-items: flex-end;
 
-      display:
-        flex;
-
-      align-items:
-        flex-end;
-
-      overflow:
-        hidden;
+      overflow: hidden;
     }
 
 
     .modal-image-wrap {
+      position: absolute;
 
-      position:
-        absolute;
+      inset: 0;
 
-      inset:
-        0;
+      overflow: hidden;
 
-      overflow:
-        hidden;
-
-      background:
-        #111;
+      background: #111;
     }
 
 
     .modal-image {
+      display: block;
 
-      display:
-        block;
+      width: 100%;
+      height: 100%;
 
-      width:
-        100%;
-
-      height:
-        100%;
-
-      object-fit:
-        cover;
+      object-fit: cover;
 
       transform:
         scale(1.15);
@@ -1883,17 +1385,11 @@
       filter:
         blur(8px);
 
-      opacity:
-        0;
+      opacity: 0;
 
       transition:
         transform 1.2s
-        cubic-bezier(
-          0.22,
-          1,
-          0.36,
-          1
-        ),
+        cubic-bezier(0.22,1,0.36,1),
         filter 1.2s ease,
         opacity 0.9s ease;
     }
@@ -1901,28 +1397,22 @@
 
     .artist-modal.show
     .modal-image {
-
       transform:
         scale(1);
 
       filter:
         blur(0);
 
-      opacity:
-        1;
+      opacity: 1;
     }
 
 
     .modal-image-wrap::after {
+      content: "";
 
-      content:
-        "";
+      position: absolute;
 
-      position:
-        absolute;
-
-      inset:
-        0;
+      inset: 0;
 
       background:
         linear-gradient(
@@ -1935,21 +1425,16 @@
 
 
     .modal-hero-info {
+      position: relative;
 
-      position:
-        relative;
+      z-index: 4;
 
-      z-index:
-        4;
-
-      width:
-        100%;
+      width: 100%;
 
       padding:
         34px 22px 28px;
 
-      text-align:
-        left;
+      text-align: left;
     }
 
 
@@ -1958,9 +1443,7 @@
     .modal-meta-row,
     .modal-description,
     .track-area {
-
-      opacity:
-        0;
+      opacity: 0;
 
       transform:
         translateY(28px);
@@ -1972,7 +1455,6 @@
 
     .artist-modal.show
     .modal-kicker {
-
       animation:
         modalReveal
         0.7s
@@ -1983,7 +1465,6 @@
 
     .artist-modal.show
     .modal-name {
-
       animation:
         modalReveal
         0.8s
@@ -1994,7 +1475,6 @@
 
     .artist-modal.show
     .modal-meta-row {
-
       animation:
         modalReveal
         0.7s
@@ -2005,7 +1485,6 @@
 
     .artist-modal.show
     .modal-description {
-
       animation:
         modalReveal
         0.7s
@@ -2016,7 +1495,6 @@
 
     .artist-modal.show
     .track-area {
-
       animation:
         modalReveal
         0.7s
@@ -2028,13 +1506,9 @@
     @keyframes modalReveal {
 
       to {
-
-        opacity:
-          1;
-
+        opacity: 1;
         transform:
           translateY(0);
-
         filter:
           blur(0);
       }
@@ -2043,15 +1517,10 @@
 
 
     .modal-kicker {
+      font-size: 10px;
+      font-weight: bold;
 
-      font-size:
-        10px;
-
-      font-weight:
-        bold;
-
-      letter-spacing:
-        5px;
+      letter-spacing: 5px;
 
       color:
         var(--modal-accent);
@@ -2059,7 +1528,6 @@
 
 
     .modal-name {
-
       margin:
         8px 0 0;
 
@@ -2070,11 +1538,9 @@
           76px
         );
 
-      line-height:
-        0.95;
+      line-height: 0.95;
 
-      letter-spacing:
-        3px;
+      letter-spacing: 3px;
 
       text-shadow:
         0 8px 30px
@@ -2083,23 +1549,17 @@
 
 
     .modal-meta-row {
+      display: flex;
 
-      display:
-        flex;
+      flex-wrap: wrap;
 
-      flex-wrap:
-        wrap;
+      gap: 8px;
 
-      gap:
-        8px;
-
-      margin-top:
-        18px;
+      margin-top: 18px;
     }
 
 
     .modal-genre {
-
       padding:
         8px 13px;
 
@@ -2116,41 +1576,27 @@
       color:
         var(--modal-accent);
 
-      font-size:
-        10px;
+      font-size: 10px;
+      font-weight: bold;
 
-      font-weight:
-        bold;
-
-      letter-spacing:
-        2px;
+      letter-spacing: 2px;
     }
 
 
     .modal-description {
+      margin-top: 22px;
 
-      margin-top:
-        22px;
+      font-size: 14px;
 
-      font-size:
-        14px;
-
-      line-height:
-        1.8;
+      line-height: 1.8;
 
       color:
         rgba(255,255,255,0.82);
     }
 
 
-    /* =====================================
-       TRACK
-    ===================================== */
-
     .track-area {
-
-      position:
-        relative;
+      position: relative;
 
       margin:
         26px 18px 0;
@@ -2178,7 +1624,6 @@
 
 
     .track-area.playing {
-
       background:
         rgba(255,185,142,0.10);
 
@@ -2189,28 +1634,20 @@
 
 
     .track-top-row {
-
-      display:
-        flex;
+      display: flex;
 
       justify-content:
         space-between;
 
-      gap:
-        14px;
+      gap: 14px;
     }
 
 
     .track-label {
+      font-size: 9px;
+      font-weight: bold;
 
-      font-size:
-        9px;
-
-      font-weight:
-        bold;
-
-      letter-spacing:
-        4px;
+      letter-spacing: 4px;
 
       color:
         var(--modal-accent);
@@ -2218,9 +1655,7 @@
 
 
     .track-title {
-
-      margin-top:
-        8px;
+      margin-top: 8px;
 
       font-size:
         clamp(
@@ -2229,41 +1664,26 @@
           30px
         );
 
-      font-weight:
-        800;
+      font-weight: 800;
     }
 
 
-    /* =====================================
-       EQ
-    ===================================== */
-
     .mini-eq {
+      display: flex;
 
-      display:
-        flex;
+      align-items: flex-end;
 
-      align-items:
-        flex-end;
+      gap: 3px;
 
-      gap:
-        3px;
-
-      height:
-        30px;
+      height: 30px;
     }
 
 
     .mini-eq span {
+      width: 3px;
+      height: 8px;
 
-      width:
-        3px;
-
-      height:
-        8px;
-
-      border-radius:
-        999px;
+      border-radius: 999px;
 
       background:
         var(--modal-accent);
@@ -2272,43 +1692,34 @@
 
     .track-area.playing
     .mini-eq span:nth-child(1) {
-
       animation:
         eq1
         0.7s infinite;
     }
 
-
     .track-area.playing
     .mini-eq span:nth-child(2) {
-
       animation:
         eq2
         0.55s infinite;
     }
 
-
     .track-area.playing
     .mini-eq span:nth-child(3) {
-
       animation:
         eq3
         0.8s infinite;
     }
 
-
     .track-area.playing
     .mini-eq span:nth-child(4) {
-
       animation:
         eq2
         0.65s infinite;
     }
 
-
     .track-area.playing
     .mini-eq span:nth-child(5) {
-
       animation:
         eq1
         0.6s infinite;
@@ -2319,15 +1730,11 @@
 
       0%,
       100% {
-
-        height:
-          7px;
+        height: 7px;
       }
 
       50% {
-
-        height:
-          25px;
+        height: 25px;
       }
 
     }
@@ -2337,15 +1744,11 @@
 
       0%,
       100% {
-
-        height:
-          14px;
+        height: 14px;
       }
 
       50% {
-
-        height:
-          28px;
+        height: 28px;
       }
 
     }
@@ -2355,58 +1758,40 @@
 
       0%,
       100% {
-
-        height:
-          22px;
+        height: 22px;
       }
 
       50% {
-
-        height:
-          9px;
+        height: 9px;
       }
 
     }
 
 
-    /* =====================================
-       PLAY
-    ===================================== */
-
     .play-button {
+      width: 100%;
 
-      width:
-        100%;
-
-      margin-top:
-        20px;
+      margin-top: 20px;
 
       padding:
         16px 20px;
 
-      border:
-        none;
+      border: none;
 
       border-radius:
         999px;
 
-      background:
-        white;
+      background: white;
 
       color:
         #071426;
 
-      font-size:
-        14px;
+      font-size: 14px;
+      font-weight: 900;
 
-      font-weight:
-        900;
+      letter-spacing: 3px;
 
-      letter-spacing:
-        3px;
-
-      cursor:
-        pointer;
+      cursor: pointer;
 
       transition:
         background 0.3s ease,
@@ -2415,7 +1800,6 @@
 
 
     .play-button:active {
-
       transform:
         scale(0.97);
     }
@@ -2423,23 +1807,18 @@
 
     .track-area.playing
     .play-button {
-
       background:
         var(--modal-accent);
     }
 
 
     .progress-wrap {
-
-      margin-top:
-        18px;
+      margin-top: 18px;
     }
 
 
     .progress-bar {
-
-      width:
-        100%;
+      width: 100%;
 
       accent-color:
         var(--modal-accent);
@@ -2447,76 +1826,45 @@
 
 
     .audio-time {
-
-      display:
-        flex;
+      display: flex;
 
       justify-content:
         space-between;
 
-      margin-top:
-        8px;
+      margin-top: 8px;
 
-      font-size:
-        10px;
+      font-size: 10px;
 
       color:
         rgba(255,255,255,0.55);
     }
 
 
-    /* =====================================
-       MOBILE
-    ===================================== */
-
     @media
     (max-width: 768px) {
 
       .sun {
-
-        width:
-          300px;
-
-        top:
-          1%;
-
-        right:
-          -70px;
+        width: 300px;
+        top: 1%;
+        right: -70px;
       }
-
 
       .moon {
-
-        width:
-          260px;
-
-        top:
-          3%;
-
-        left:
-          -55px;
+        width: 260px;
+        top: 3%;
+        left: -55px;
       }
-
 
       .apricot-logo {
-
-        width:
-          108%;
-
-        max-width:
-          680px;
+        width: 108%;
+        max-width: 680px;
       }
-
 
       .audience {
-
-        width:
-          150%;
+        width: 150%;
       }
 
-
       .memory-collage {
-
         height:
           min(
             58vh,
@@ -2524,11 +1872,8 @@
           );
       }
 
-
       .memory-photo {
-
-        width:
-          32%;
+        width: 32%;
 
         padding:
           4px
@@ -2536,25 +1881,17 @@
           13px;
       }
 
-
       .modal-hero {
-
-        min-height:
-          62vh;
+        min-height: 62vh;
       }
 
     }
 
 
-    /* =====================================
-       REDUCED MOTION
-    ===================================== */
-
     @media
     (prefers-reduced-motion: reduce) {
 
       * {
-
         scroll-behavior:
           auto !important;
       }
@@ -2569,16 +1906,10 @@
 <body>
 
 
-  <!-- SKY -->
-
   <div class="sky-layer sky-day"></div>
-
   <div class="sky-layer sky-sunset"></div>
-
   <div class="sky-layer sky-night"></div>
 
-
-  <!-- SUN -->
 
   <img
     src="image/sun.png"
@@ -2587,8 +1918,6 @@
   >
 
 
-  <!-- MOON -->
-
   <img
     src="image/moon.png"
     class="moon"
@@ -2596,12 +1925,8 @@
   >
 
 
-  <!-- STARS -->
-
   <div class="stars"></div>
 
-
-  <!-- CLOUDS -->
 
   <div class="clouds-wrapper">
 
@@ -2614,8 +1939,6 @@
   </div>
 
 
-  <!-- BACKGROUND -->
-
   <div class="background-wrapper">
 
     <img
@@ -2626,8 +1949,6 @@
 
   </div>
 
-
-  <!-- SCHOOL -->
 
   <div class="school-wrapper">
 
@@ -2640,8 +1961,6 @@
   </div>
 
 
-  <!-- GIRL -->
-
   <div class="audience-wrapper">
 
     <img
@@ -2653,14 +1972,8 @@
   </div>
 
 
-  <!-- =====================================
-       PARALLAX
-  ====================================== -->
-
   <main class="parallax-area">
 
-
-    <!-- DAY -->
 
     <section class="section">
 
@@ -2676,10 +1989,6 @@
 
     </section>
 
-
-    <!-- =====================================
-         MEMORIES
-    ====================================== -->
 
     <section
       class="section"
@@ -2717,102 +2026,43 @@
 
 
           <div class="memory-photo">
-
-            <img
-              src="image/memory-01.png"
-              alt=""
-            >
-
+            <img src="image/memory-01.png" alt="">
           </div>
 
-
           <div class="memory-photo">
-
-            <img
-              src="image/memory-02.png"
-              alt=""
-            >
-
+            <img src="image/memory-02.png" alt="">
           </div>
 
-
           <div class="memory-photo">
-
-            <img
-              src="image/memory-03.png"
-              alt=""
-            >
-
+            <img src="image/memory-03.png" alt="">
           </div>
 
-
           <div class="memory-photo">
-
-            <img
-              src="image/memory-04.png"
-              alt=""
-            >
-
+            <img src="image/memory-04.png" alt="">
           </div>
 
-
           <div class="memory-photo">
-
-            <img
-              src="image/memory-05.png"
-              alt=""
-            >
-
+            <img src="image/memory-05.png" alt="">
           </div>
 
-
           <div class="memory-photo">
-
-            <img
-              src="image/memory-06.png"
-              alt=""
-            >
-
+            <img src="image/memory-06.png" alt="">
           </div>
 
-
           <div class="memory-photo">
-
-            <img
-              src="image/memory-11.jpg"
-              alt=""
-            >
-
+            <img src="image/memory-11.jpg" alt="">
           </div>
 
-
           <div class="memory-photo">
-
-            <img
-              src="image/memory-08.png"
-              alt=""
-            >
-
+            <img src="image/memory-08.png" alt="">
           </div>
 
-
           <div class="memory-photo">
-
-            <img
-              src="image/memory-09.png"
-              alt=""
-            >
-
+            <img src="image/memory-09.png" alt="">
           </div>
 
-
           <div class="memory-photo">
-
-            <img
-              src="image/memory-10.png"
-              alt=""
-            >
-
+            <img src="image/memory-10.png" alt="">
           </div>
 
 
@@ -2823,19 +2073,11 @@
     </section>
 
 
-    <!-- =====================================
-         SILENCE
-    ====================================== -->
-
     <div
       class="silence-section"
       id="silenceSection"
     ></div>
 
-
-    <!-- =====================================
-         NIGHT
-    ====================================== -->
 
     <section
       class="section"
@@ -2938,10 +2180,6 @@
   </main>
 
 
-  <!-- =====================================
-       ARTIST
-  ====================================== -->
-
   <section
     class="artists-section"
     id="artist"
@@ -3023,10 +2261,6 @@
   </section>
 
 
-  <!-- =====================================
-       FULLSCREEN MODAL
-  ====================================== -->
-
   <div
     class="artist-modal"
     id="artistModal"
@@ -3050,8 +2284,6 @@
 
     <div class="modal-inner">
 
-
-      <!-- HERO -->
 
       <div class="modal-hero">
 
@@ -3104,8 +2336,6 @@
       </div>
 
 
-      <!-- MUSIC -->
-
       <div
         class="track-area"
         id="trackArea"
@@ -3133,13 +2363,9 @@
           <div class="mini-eq">
 
             <span></span>
-
             <span></span>
-
             <span></span>
-
             <span></span>
-
             <span></span>
 
           </div>
@@ -3197,16 +2423,8 @@
   </div>
 
 
-  <!-- =====================================
-       JAVASCRIPT
-  ====================================== -->
-
   <script>
 
-
-    /* =====================================
-       ARTIST DATA
-    ===================================== */
 
     const artists = [
 
@@ -3237,10 +2455,6 @@
 
     ];
 
-
-    /* =====================================
-       ELEMENTS
-    ===================================== */
 
     const skyDay =
       document.querySelector(
@@ -3320,21 +2534,11 @@
       );
 
 
-    const nightSection =
-      document.getElementById(
-        "nightSection"
-      );
-
-
     const nightContent =
       document.getElementById(
         "nightContent"
       );
 
-
-    /* =====================================
-       MODAL
-    ===================================== */
 
     const artistModal =
       document.getElementById(
@@ -3414,10 +2618,6 @@
       );
 
 
-    /* =====================================
-       UTILS
-    ===================================== */
-
     function clamp(
       value,
       min,
@@ -3478,10 +2678,6 @@
     }
 
 
-    /* =====================================
-       COMMON REVEAL
-    ===================================== */
-
     const revealTargets =
       document.querySelectorAll(
         ".reveal-item, .artist-card"
@@ -3538,11 +2734,6 @@
       }
     );
 
-
-    /* =====================================
-       MEMORIES
-       スクロール量に合わせて順番に登場
-    ===================================== */
 
     function updateMemories() {
 
@@ -3649,8 +2840,6 @@
             `;
 
 
-          /* 色褪せ */
-
           const aging =
             clamp(
               (
@@ -3720,10 +2909,6 @@
     }
 
 
-    /* =====================================
-       PARALLAX
-    ===================================== */
-
     function updateParallax() {
 
 
@@ -3746,10 +2931,6 @@
           1
         );
 
-
-      /* =====================================
-         SKY
-      ===================================== */
 
       const sunsetAmount =
         clamp(
@@ -3795,9 +2976,7 @@
         nightAmount;
 
 
-      /* =====================================
-         SUN
-      ===================================== */
+      /* SUN */
 
       const sunDown =
         clamp(
@@ -3812,7 +2991,7 @@
       const sunY =
         window.innerHeight
         *
-        0.82
+        0.58
         *
         sunDown;
 
@@ -3848,12 +3027,14 @@
           1
           -
           (
-            progress
-            -
-            0.40
-          )
-          /
-          0.22,
+            (
+              progress
+              -
+              0.30
+            )
+            /
+            0.16
+          ),
           0,
           1
         );
@@ -3892,9 +3073,7 @@
         `;
 
 
-      /* =====================================
-         MOON
-      ===================================== */
+      /* MOON */
 
       const moonAmount =
         clamp(
@@ -3930,10 +3109,6 @@
         `;
 
 
-      /* =====================================
-         STARS
-      ===================================== */
-
       stars.style.opacity =
         clamp(
           (
@@ -3947,10 +3122,6 @@
           0.70
         );
 
-
-      /* =====================================
-         CLOUDS
-      ===================================== */
 
       cloudsWrapper.style.transform =
         `
@@ -3986,10 +3157,6 @@
         `;
 
 
-      /* =====================================
-         BACKGROUND
-      ===================================== */
-
       backgroundWrapper.style.transform =
         `
           translateY(
@@ -4017,10 +3184,6 @@
         -
         backgroundFade;
 
-
-      /* =====================================
-         SCHOOL
-      ===================================== */
 
       const schoolHeight =
         schoolWrapper.offsetHeight;
@@ -4081,10 +3244,6 @@
           )
         `;
 
-
-      /* =====================================
-         GIRL
-      ===================================== */
 
       const audiencePhase =
         clamp(
@@ -4184,10 +3343,6 @@
         `;
 
 
-      /* =====================================
-         SILENCE
-      ===================================== */
-
       const silenceAmount =
         clamp(
           (
@@ -4223,10 +3378,6 @@
       }
 
 
-      /* =====================================
-         APRICOT APPEAR
-      ===================================== */
-
       if (
         progress
         >
@@ -4252,10 +3403,6 @@
 
     }
 
-
-    /* =====================================
-       MODAL OPEN
-    ===================================== */
 
     function openArtistModal(
       index
@@ -4352,10 +3499,6 @@
     }
 
 
-    /* =====================================
-       MODAL CLOSE
-    ===================================== */
-
     function closeArtistModal() {
 
 
@@ -4389,10 +3532,6 @@
     }
 
 
-    /* =====================================
-       ARTIST CLICK
-    ===================================== */
-
     document
       .querySelectorAll(
         ".artist-card"
@@ -4422,10 +3561,6 @@
       closeArtistModal
     );
 
-
-    /* =====================================
-       PLAY
-    ===================================== */
 
     playButton.addEventListener(
       "click",
@@ -4500,10 +3635,6 @@
       }
     );
 
-
-    /* =====================================
-       AUDIO
-    ===================================== */
 
     audioPlayer.addEventListener(
       "loadedmetadata",
@@ -4611,10 +3742,6 @@
     );
 
 
-    /* =====================================
-       EVENTS
-    ===================================== */
-
     window.addEventListener(
       "scroll",
       updateParallax,
@@ -4638,4 +3765,4 @@
 
 </body>
 
-  </html>
+</html>
