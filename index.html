@@ -10,8 +10,7 @@
     content="width=device-width, initial-scale=1.0"
   >
 
-  <title>apricot</title>
-
+  <title>APRICOT</title>
 
   <style>
 
@@ -32,7 +31,6 @@
       margin: 0;
       padding: 0;
       width: 100%;
-
       overflow-x: hidden;
 
       font-family:
@@ -41,7 +39,6 @@
         sans-serif;
 
       color: white;
-
       background: #071426;
     }
 
@@ -56,7 +53,6 @@
 
     .parallax-area {
       position: relative;
-
       height: 300vh;
     }
 
@@ -67,16 +63,12 @@
 
     .sky-layer {
       position: fixed;
-
       inset: 0;
-
       z-index: 0;
-
       pointer-events: none;
     }
 
     .sky-day {
-
       background:
         linear-gradient(
           to bottom,
@@ -89,7 +81,6 @@
     }
 
     .sky-sunset {
-
       background:
         linear-gradient(
           to bottom,
@@ -103,7 +94,6 @@
     }
 
     .sky-night {
-
       background:
         linear-gradient(
           to bottom,
@@ -121,23 +111,18 @@
     ===================================== */
 
     .sun {
-
       position: fixed;
 
       width: 240px;
-
       max-width: none;
-
       height: auto;
 
       top: 3%;
-
       right: -25px;
 
       z-index: 1;
 
       pointer-events: none;
-
       object-fit: contain;
 
       filter:
@@ -157,17 +142,13 @@
     ===================================== */
 
     .moon {
-
       position: fixed;
 
       width: 210px;
-
       max-width: none;
-
       height: auto;
 
       top: 5%;
-
       left: -20px;
 
       opacity: 0;
@@ -175,7 +156,6 @@
       z-index: 1;
 
       pointer-events: none;
-
       object-fit: contain;
 
       filter:
@@ -195,9 +175,7 @@
     ===================================== */
 
     .stars {
-
       position: fixed;
-
       inset: 0;
 
       background-image:
@@ -222,17 +200,14 @@
     ===================================== */
 
     .clouds-wrapper {
-
       position: fixed;
 
       top: 5%;
-
       left: 0;
 
       width: 100%;
 
       display: flex;
-
       justify-content: center;
 
       z-index: 2;
@@ -246,11 +221,8 @@
     }
 
     .clouds {
-
       display: block;
-
       width: 150%;
-
       max-width: none;
     }
 
@@ -260,17 +232,13 @@
     ===================================== */
 
     .background-wrapper {
-
       position: fixed;
 
       left: 0;
-
       right: 0;
-
       bottom: 16%;
 
       display: flex;
-
       justify-content: center;
 
       z-index: 3;
@@ -283,12 +251,9 @@
         filter;
     }
 
-    .festival-background {
-
+    .school-background {
       display: block;
-
       width: 165%;
-
       max-width: none;
     }
 
@@ -297,18 +262,14 @@
        SCHOOL
     ===================================== */
 
-    .stage-wrapper {
-
+    .school-wrapper {
       position: fixed;
 
       left: 0;
-
       right: 0;
-
       bottom: -20px;
 
       display: flex;
-
       justify-content: center;
 
       z-index: 4;
@@ -320,32 +281,25 @@
         opacity;
     }
 
-    .stage {
-
+    .school {
       display: block;
-
       width: 118%;
-
       max-width: none;
     }
 
 
     /* =====================================
-       GIRL / BICYCLE
+       GIRL / AUDIENCE
     ===================================== */
 
     .audience-wrapper {
-
       position: fixed;
 
       left: 0;
-
       right: 0;
-
       bottom: 0;
 
       display: flex;
-
       justify-content: center;
 
       z-index: 5;
@@ -361,13 +315,10 @@
     }
 
     .audience {
-
       display: block;
 
       width: 145%;
-
       max-width: none;
-
       height: auto;
     }
 
@@ -377,15 +328,12 @@
     ===================================== */
 
     .section {
-
       position: relative;
 
       height: 100vh;
 
       display: flex;
-
       justify-content: center;
-
       align-items: center;
 
       text-align: center;
@@ -394,13 +342,11 @@
     }
 
     .content {
-
       position: relative;
 
       z-index: 9;
 
       width: 100%;
-
       max-width: 800px;
 
       padding: 25px;
@@ -411,14 +357,11 @@
        APRICOT LOGO
     ===================================== */
 
-    .festival-logo {
-
+    .apricot-logo {
       display: block;
 
       width: 80%;
-
       max-width: 500px;
-
       height: auto;
 
       margin: 0 auto;
@@ -438,7 +381,6 @@
     ===================================== */
 
     .reveal-item {
-
       opacity: 0;
 
       transform:
@@ -449,26 +391,15 @@
 
       transition:
         opacity 0.75s
-        cubic-bezier(
-          0.22,
-          1,
-          0.36,
-          1
-        ),
+        cubic-bezier(0.22,1,0.36,1),
 
         transform 0.75s
-        cubic-bezier(
-          0.22,
-          1,
-          0.36,
-          1
-        ),
+        cubic-bezier(0.22,1,0.36,1),
 
         filter 0.75s ease;
     }
 
     .reveal-item.reveal {
-
       opacity: 1;
 
       transform:
@@ -480,35 +411,15 @@
 
 
     /* =====================================
-       SECTION EYEBROW
-    ===================================== */
-
-    .section-eyebrow {
-
-      margin-bottom: 7px;
-
-      font-size: 12px;
-
-      font-weight: bold;
-
-      letter-spacing: 6px;
-
-      opacity: 0.75;
-    }
-
-
-    /* =====================================
        MEMORIES
     ===================================== */
 
     .memories-content {
-
       position: relative;
 
       z-index: 9;
 
       width: 100%;
-
       max-width: 900px;
 
       margin: auto;
@@ -517,9 +428,18 @@
         20px 12px;
     }
 
+    .section-eyebrow {
+      margin-bottom: 7px;
+
+      font-size: 12px;
+      font-weight: bold;
+
+      letter-spacing: 6px;
+
+      opacity: 0.75;
+    }
 
     .memories-title {
-
       margin: 0;
 
       font-size:
@@ -530,57 +450,54 @@
         );
 
       letter-spacing: 5px;
-
       line-height: 1;
     }
 
-
     .memories-subtitle {
-
       margin:
-        10px 0 20px;
+        10px 0 18px;
 
       font-size: 11px;
 
       letter-spacing: 3px;
 
-      opacity: 0.70;
+      opacity: 0.7;
     }
 
 
-    .memories-board {
+    /* =====================================
+       MEMORY COLLAGE
+    ===================================== */
 
+    .memory-collage {
       position: relative;
 
       width: 100%;
+      max-width: 720px;
 
-      height: 62vh;
-
-      max-height: 610px;
+      height:
+        clamp(
+          390px,
+          56vh,
+          560px
+        );
 
       margin: 0 auto;
     }
 
-
     .memory-photo {
-
       position: absolute;
 
-      width: 31%;
-
-      max-width: 220px;
+      width: 30%;
 
       padding:
-        5px
-        5px
-        15px;
+        6px 6px 20px;
 
-      background:
-        #f7f4ed;
+      background: #f5f1e8;
 
       box-shadow:
-        0 10px 25px
-        rgba(0,0,0,0.28);
+        0 12px 25px
+        rgba(0,0,0,0.30);
 
       opacity: 0;
 
@@ -588,275 +505,220 @@
         blur(5px);
 
       transition:
-        opacity 0.8s ease,
+        opacity 0.8s
+        cubic-bezier(0.22,1,0.36,1),
 
         transform 0.8s
-        cubic-bezier(
-          0.22,
-          1,
-          0.36,
-          1
-        ),
+        cubic-bezier(0.22,1,0.36,1),
 
         filter 0.8s ease;
     }
 
-
     .memory-photo img {
-
       display: block;
 
       width: 100%;
+      aspect-ratio: 4 / 3;
 
-      height: auto;
+      object-fit: cover;
     }
-
 
     .memory-photo.reveal {
-
       opacity: 1;
-
-      filter:
-        blur(0);
+      filter: blur(0);
     }
 
 
-    /* =====================================
-       MEMORY POSITIONS
-    ===================================== */
+    /* 01 */
 
     .memory-photo:nth-child(1) {
-
-      left: 3%;
-
-      top: 2%;
+      left: 2%;
+      top: 4%;
 
       transform:
         translateY(30px)
         rotate(-8deg);
+    }
 
-      transition-delay:
-        0.02s;
+    .memory-photo:nth-child(1).reveal {
+      transform:
+        translateY(0)
+        rotate(-8deg);
     }
 
 
+    /* 02 */
+
     .memory-photo:nth-child(2) {
-
       left: 35%;
-
-      top: 0%;
+      top: 0;
 
       transform:
         translateY(30px)
         rotate(5deg);
+    }
 
-      transition-delay:
-        0.07s;
+    .memory-photo:nth-child(2).reveal {
+      transform:
+        translateY(0)
+        rotate(5deg);
     }
 
 
+    /* 03 */
+
     .memory-photo:nth-child(3) {
-
       right: 2%;
-
       top: 7%;
 
       transform:
         translateY(30px)
         rotate(-4deg);
-
-      transition-delay:
-        0.12s;
     }
-
-
-    .memory-photo:nth-child(4) {
-
-      left: 10%;
-
-      top: 31%;
-
-      transform:
-        translateY(30px)
-        rotate(6deg);
-
-      transition-delay:
-        0.17s;
-    }
-
-
-    .memory-photo:nth-child(5) {
-
-      left: 39%;
-
-      top: 27%;
-
-      transform:
-        translateY(30px)
-        rotate(-7deg);
-
-      transition-delay:
-        0.22s;
-    }
-
-
-    .memory-photo:nth-child(6) {
-
-      right: 5%;
-
-      top: 35%;
-
-      transform:
-        translateY(30px)
-        rotate(8deg);
-
-      transition-delay:
-        0.27s;
-    }
-
-
-    .memory-photo:nth-child(7) {
-
-      left: 1%;
-
-      top: 61%;
-
-      transform:
-        translateY(30px)
-        rotate(-5deg);
-
-      transition-delay:
-        0.32s;
-    }
-
-
-    .memory-photo:nth-child(8) {
-
-      left: 28%;
-
-      top: 58%;
-
-      transform:
-        translateY(30px)
-        rotate(4deg);
-
-      transition-delay:
-        0.37s;
-    }
-
-
-    .memory-photo:nth-child(9) {
-
-      right: 20%;
-
-      top: 63%;
-
-      transform:
-        translateY(30px)
-        rotate(-7deg);
-
-      transition-delay:
-        0.42s;
-    }
-
-
-    .memory-photo:nth-child(10) {
-
-      right: 0%;
-
-      top: 57%;
-
-      transform:
-        translateY(30px)
-        rotate(6deg);
-
-      transition-delay:
-        0.47s;
-    }
-
-
-    .memory-photo:nth-child(1).reveal {
-
-      transform:
-        rotate(-8deg);
-    }
-
-
-    .memory-photo:nth-child(2).reveal {
-
-      transform:
-        rotate(5deg);
-    }
-
 
     .memory-photo:nth-child(3).reveal {
-
       transform:
+        translateY(0)
         rotate(-4deg);
     }
 
 
-    .memory-photo:nth-child(4).reveal {
+    /* 04 */
+
+    .memory-photo:nth-child(4) {
+      left: 8%;
+      top: 35%;
 
       transform:
+        translateY(30px)
+        rotate(6deg);
+    }
+
+    .memory-photo:nth-child(4).reveal {
+      transform:
+        translateY(0)
         rotate(6deg);
     }
 
 
-    .memory-photo:nth-child(5).reveal {
+    /* 05 */
+
+    .memory-photo:nth-child(5) {
+      left: 38%;
+      top: 29%;
 
       transform:
+        translateY(30px)
+        rotate(-7deg);
+    }
+
+    .memory-photo:nth-child(5).reveal {
+      transform:
+        translateY(0)
         rotate(-7deg);
     }
 
 
-    .memory-photo:nth-child(6).reveal {
+    /* 06 */
+
+    .memory-photo:nth-child(6) {
+      right: 5%;
+      top: 37%;
 
       transform:
+        translateY(30px)
+        rotate(8deg);
+    }
+
+    .memory-photo:nth-child(6).reveal {
+      transform:
+        translateY(0)
         rotate(8deg);
     }
 
 
-    .memory-photo:nth-child(7).reveal {
+    /* 07 */
+
+    .memory-photo:nth-child(7) {
+      left: 1%;
+      top: 68%;
 
       transform:
+        translateY(30px)
+        rotate(-5deg);
+    }
+
+    .memory-photo:nth-child(7).reveal {
+      transform:
+        translateY(0)
         rotate(-5deg);
     }
 
 
-    .memory-photo:nth-child(8).reveal {
+    /* 08 */
+
+    .memory-photo:nth-child(8) {
+      left: 25%;
+      top: 63%;
 
       transform:
-        rotate(4deg);
+        translateY(30px)
+        rotate(7deg);
     }
 
+    .memory-photo:nth-child(8).reveal {
+      transform:
+        translateY(0)
+        rotate(7deg);
+    }
+
+
+    /* 09 */
+
+    .memory-photo:nth-child(9) {
+      left: 50%;
+      top: 66%;
+
+      transform:
+        translateY(30px)
+        rotate(-3deg);
+    }
 
     .memory-photo:nth-child(9).reveal {
-
       transform:
-        rotate(-7deg);
+        translateY(0)
+        rotate(-3deg);
     }
 
 
-    .memory-photo:nth-child(10).reveal {
+    /* 10 */
+
+    .memory-photo:nth-child(10) {
+      right: 0;
+      top: 62%;
 
       transform:
+        translateY(30px)
+        rotate(6deg);
+    }
+
+    .memory-photo:nth-child(10).reveal {
+      transform:
+        translateY(0)
         rotate(6deg);
     }
 
 
     /* =====================================
-       APRICOT / NIGHT
+       NIGHT / APRICOT
     ===================================== */
 
     .headliner-content {
-
       position: relative;
 
       z-index: 9;
 
       width: 100%;
-
       max-width: 700px;
 
       margin: auto;
@@ -867,13 +729,10 @@
       text-align: center;
     }
 
-
     .headliner-small {
-
       margin-bottom: 10px;
 
       font-size: 12px;
-
       font-weight: bold;
 
       letter-spacing: 7px;
@@ -883,9 +742,7 @@
       transition-delay: 0.02s;
     }
 
-
     .headliner-title {
-
       margin: 0;
 
       font-size:
@@ -903,19 +760,16 @@
         0 10px 40px
         rgba(0,0,0,0.45);
 
-      transition-delay:
-        0.10s;
+      transition-delay: 0.10s;
     }
 
-
     .headliner-title span {
-
       background:
         linear-gradient(
           90deg,
           #ffffff,
-          #ffd3c9,
-          #ffc0cb,
+          #ffd6c7,
+          #ffb4ad,
           #ffffff
         );
 
@@ -937,26 +791,21 @@
         infinite;
     }
 
-
     @keyframes titleGlow {
 
       from {
-
         background-position:
           0% center;
       }
 
       to {
-
         background-position:
           200% center;
       }
 
     }
 
-
     .headliner-copy {
-
       margin:
         24px auto 0;
 
@@ -968,13 +817,10 @@
 
       opacity: 0.85;
 
-      transition-delay:
-        0.18s;
+      transition-delay: 0.18s;
     }
 
-
     .headliner-stats {
-
       display: flex;
 
       justify-content: center;
@@ -983,13 +829,10 @@
 
       margin-top: 27px;
 
-      transition-delay:
-        0.26s;
+      transition-delay: 0.26s;
     }
 
-
     .headliner-stat {
-
       flex: 1;
 
       max-width: 150px;
@@ -1006,9 +849,7 @@
         rgba(255,255,255,0.4);
     }
 
-
     .stat-number {
-
       display: block;
 
       font-size: 24px;
@@ -1016,9 +857,7 @@
       font-weight: bold;
     }
 
-
     .stat-label {
-
       display: block;
 
       margin-top: 4px;
@@ -1036,11 +875,9 @@
     ===================================== */
 
     .artists-cta {
-
       display: inline-flex;
 
       align-items: center;
-
       justify-content: center;
 
       gap: 13px;
@@ -1064,7 +901,6 @@
       text-decoration: none;
 
       font-size: 12px;
-
       font-weight: bold;
 
       letter-spacing: 3px;
@@ -1072,20 +908,15 @@
       backdrop-filter:
         blur(8px);
 
-      transition-delay:
-        0.34s;
+      transition-delay: 0.34s;
     }
 
-
     .artists-cta:active {
-
       transform:
         scale(0.96);
     }
 
-
     .cta-arrow {
-
       display: inline-block;
 
       font-size: 18px;
@@ -1097,18 +928,15 @@
         infinite;
     }
 
-
     @keyframes arrowBounce {
 
       0%,
       100% {
-
         transform:
           translateY(-3px);
       }
 
       50% {
-
         transform:
           translateY(4px);
       }
@@ -1121,7 +949,6 @@
     ===================================== */
 
     .artists-section {
-
       position: relative;
 
       z-index: 20;
@@ -1139,9 +966,7 @@
         55px 18px 110px;
     }
 
-
     .artists-title {
-
       margin:
         0 0 8px;
 
@@ -1157,9 +982,7 @@
       letter-spacing: 8px;
     }
 
-
     .artists-caption {
-
       margin:
         0 0 38px;
 
@@ -1178,14 +1001,13 @@
     ===================================== */
 
     .artists-grid {
+      display: grid;
 
-      display: flex;
-
-      justify-content: center;
+      grid-template-columns:
+        minmax(0, 1fr);
 
       width: 100%;
-
-      max-width: 600px;
+      max-width: 620px;
 
       margin: 0 auto;
     }
@@ -1196,21 +1018,15 @@
     ===================================== */
 
     .artist-card {
-
-      --accent:
-        #f4b6a6;
+      --accent: #ffb98e;
 
       position: relative;
 
       width: 100%;
 
-      max-width: 520px;
-
-      min-width: 0;
-
       overflow: hidden;
 
-      border-radius: 16px;
+      border-radius: 18px;
 
       cursor: pointer;
 
@@ -1243,20 +1059,10 @@
 
       transition:
         opacity 0.75s
-        cubic-bezier(
-          0.22,
-          1,
-          0.36,
-          1
-        ),
+        cubic-bezier(0.22,1,0.36,1),
 
         transform 0.75s
-        cubic-bezier(
-          0.22,
-          1,
-          0.36,
-          1
-        ),
+        cubic-bezier(0.22,1,0.36,1),
 
         filter 0.75s ease,
 
@@ -1265,9 +1071,7 @@
         box-shadow 0.25s ease;
     }
 
-
     .artist-card.reveal {
-
       opacity: 1;
 
       transform:
@@ -1278,17 +1082,13 @@
         blur(0);
     }
 
-
     .artist-card::before {
-
       content: "";
 
       position: absolute;
 
       left: 12%;
-
       right: 12%;
-
       bottom: 0;
 
       height: 2px;
@@ -1307,11 +1107,9 @@
       opacity: 0.75;
     }
 
-
     .artist-card.reveal:active {
-
       transform:
-        scale(0.965);
+        scale(0.975);
 
       border-color:
         var(--accent);
@@ -1323,7 +1121,6 @@
     ===================================== */
 
     .artist-image {
-
       position: relative;
 
       width: 100%;
@@ -1336,38 +1133,26 @@
       background: #111;
     }
 
-
     .artist-image img {
-
       display: block;
 
       width: 100%;
-
       height: 100%;
 
       object-fit: cover;
 
       transition:
         transform 0.45s
-        cubic-bezier(
-          0.22,
-          1,
-          0.36,
-          1
-        );
+        cubic-bezier(0.22,1,0.36,1);
     }
-
 
     .artist-card:active
     .artist-image img {
-
       transform:
         scale(1.035);
     }
 
-
     .artist-image::after {
-
       content: "";
 
       position: absolute;
@@ -1387,15 +1172,13 @@
 
 
     /* =====================================
-       GENRE
+       GENRE TAG
     ===================================== */
 
     .artist-genre-tag {
-
       position: absolute;
 
       top: 10px;
-
       right: 10px;
 
       z-index: 3;
@@ -1407,17 +1190,16 @@
         999px;
 
       background:
-        rgba(244,182,166,0.22);
+        rgba(255,185,142,0.25);
 
       border:
         1px solid
-        rgba(244,182,166,0.6);
+        rgba(255,200,170,0.55);
 
       backdrop-filter:
         blur(8px);
 
       font-size: 9px;
-
       font-weight: bold;
 
       letter-spacing: 1px;
@@ -1431,37 +1213,32 @@
     ===================================== */
 
     .artist-overlay {
-
       position: absolute;
 
-      left: 12px;
-
-      right: 12px;
-
-      bottom: 11px;
+      left: 16px;
+      right: 16px;
+      bottom: 14px;
 
       z-index: 3;
 
       text-align: left;
     }
 
-
     .artist-name {
-
       margin: 0;
 
       font-size:
         clamp(
-          22px,
-          6vw,
-          36px
+          24px,
+          7vw,
+          38px
         );
 
       line-height: 1.1;
 
       font-weight: 800;
 
-      letter-spacing: 1px;
+      letter-spacing: 2px;
 
       color: white;
 
@@ -1476,18 +1253,15 @@
     ===================================== */
 
     .artist-info {
-
       position: relative;
 
       padding:
-        14px 14px 17px;
+        15px 16px 18px;
 
       text-align: left;
     }
 
-
     .artist-track-label {
-
       font-size: 8px;
 
       font-weight: bold;
@@ -1500,10 +1274,8 @@
       opacity: 0.9;
     }
 
-
     .artist-track-name {
-
-      margin-top: 6px;
+      margin-top: 5px;
 
       font-size: 14px;
 
@@ -1515,9 +1287,7 @@
         rgba(255,255,255,0.90);
     }
 
-
     .artist-open {
-
       display: flex;
 
       align-items: center;
@@ -1542,9 +1312,7 @@
       opacity: 0.55;
     }
 
-
     .artist-open-arrow {
-
       color:
         var(--accent);
 
@@ -1559,9 +1327,7 @@
     ===================================== */
 
     .artist-modal {
-
-      --modal-accent:
-        #f4b6a6;
+      --modal-accent: #ffb98e;
 
       position: fixed;
 
@@ -1576,11 +1342,7 @@
       background:
         radial-gradient(
           circle at 50% 0%,
-          color-mix(
-            in srgb,
-            var(--modal-accent) 18%,
-            transparent
-          ),
+          rgba(255,185,142,0.18),
           transparent 36%
         ),
         linear-gradient(
@@ -1594,25 +1356,19 @@
         touch;
     }
 
-
     .artist-modal.show {
-
       display: block;
     }
 
-
     .artist-modal::before {
-
       content: "";
 
       position: fixed;
 
       top: -180px;
-
       left: 50%;
 
       width: 420px;
-
       height: 420px;
 
       transform:
@@ -1631,15 +1387,12 @@
       pointer-events: none;
     }
 
-
     .modal-inner {
-
       position: relative;
 
       width: 100%;
 
       min-height: 100vh;
-
       max-width: 900px;
 
       margin: 0 auto;
@@ -1660,7 +1413,6 @@
     .modal-meta-row,
     .modal-story,
     .track-area {
-
       opacity: 0;
 
       transform:
@@ -1670,130 +1422,79 @@
         blur(7px);
     }
 
-
     .artist-modal.show
     .modal-hero {
-
       animation:
         modalReveal
         0.85s
         0.04s
-        cubic-bezier(
-          0.22,
-          1,
-          0.36,
-          1
-        )
+        cubic-bezier(0.22,1,0.36,1)
         forwards;
     }
 
-
     .artist-modal.show
     .modal-kicker {
-
       animation:
         modalReveal
         0.7s
         0.18s
-        cubic-bezier(
-          0.22,
-          1,
-          0.36,
-          1
-        )
+        cubic-bezier(0.22,1,0.36,1)
         forwards;
     }
 
-
     .artist-modal.show
     .modal-name {
-
       animation:
         modalNameReveal
         0.85s
         0.24s
-        cubic-bezier(
-          0.22,
-          1,
-          0.36,
-          1
-        )
+        cubic-bezier(0.22,1,0.36,1)
         forwards;
     }
 
-
     .artist-modal.show
     .modal-alias {
-
       animation:
         modalReveal
         0.7s
         0.31s
-        cubic-bezier(
-          0.22,
-          1,
-          0.36,
-          1
-        )
+        cubic-bezier(0.22,1,0.36,1)
         forwards;
     }
 
-
     .artist-modal.show
     .modal-meta-row {
-
       animation:
         modalReveal
         0.7s
         0.37s
-        cubic-bezier(
-          0.22,
-          1,
-          0.36,
-          1
-        )
+        cubic-bezier(0.22,1,0.36,1)
         forwards;
     }
 
-
     .artist-modal.show
     .modal-story {
-
       animation:
         modalReveal
         0.75s
         0.44s
-        cubic-bezier(
-          0.22,
-          1,
-          0.36,
-          1
-        )
+        cubic-bezier(0.22,1,0.36,1)
         forwards;
     }
 
-
     .artist-modal.show
     .track-area {
-
       animation:
         modalReveal
         0.75s
         0.52s
-        cubic-bezier(
-          0.22,
-          1,
-          0.36,
-          1
-        )
+        cubic-bezier(0.22,1,0.36,1)
         forwards;
     }
-
 
     @keyframes modalReveal {
 
       0% {
-
         opacity: 0;
 
         transform:
@@ -1804,7 +1505,6 @@
       }
 
       100% {
-
         opacity: 1;
 
         transform:
@@ -1816,11 +1516,9 @@
 
     }
 
-
     @keyframes modalNameReveal {
 
       0% {
-
         opacity: 0;
 
         transform:
@@ -1832,7 +1530,6 @@
       }
 
       100% {
-
         opacity: 1;
 
         transform:
@@ -1851,17 +1548,14 @@
     ===================================== */
 
     .modal-close {
-
       position: fixed;
 
       top: 18px;
-
       right: 18px;
 
       z-index: 1100;
 
       width: 48px;
-
       height: 48px;
 
       border:
@@ -1892,14 +1586,7 @@
        MODAL HERO
     ===================================== */
 
-    .modal-hero {
-
-      position: relative;
-    }
-
-
     .modal-image-wrap {
-
       position: relative;
 
       width: 100%;
@@ -1922,9 +1609,7 @@
         rgba(0,0,0,0.45);
     }
 
-
     .modal-image-wrap::after {
-
       content: "";
 
       position: absolute;
@@ -1942,13 +1627,10 @@
       pointer-events: none;
     }
 
-
     .modal-image {
-
       display: block;
 
       width: 100%;
-
       height: 100%;
 
       object-fit: cover;
@@ -1958,29 +1640,19 @@
 
       transition:
         transform 1.2s
-        cubic-bezier(
-          0.22,
-          1,
-          0.36,
-          1
-        );
+        cubic-bezier(0.22,1,0.36,1);
     }
-
 
     .artist-modal.show
     .modal-image {
-
       transform:
         scale(1);
     }
 
-
     .modal-hero-label {
-
       position: absolute;
 
       left: 18px;
-
       bottom: 18px;
 
       z-index: 3;
@@ -1993,10 +1665,10 @@
 
       border:
         1px solid
-        rgba(244,182,166,0.6);
+        rgba(255,210,185,0.55);
 
       background:
-        rgba(5,10,20,0.72);
+        rgba(255,185,142,0.16);
 
       backdrop-filter:
         blur(10px);
@@ -2017,15 +1689,12 @@
     ===================================== */
 
     .modal-info {
-
       position: relative;
 
       margin-top: 26px;
     }
 
-
     .modal-kicker {
-
       margin-bottom: 8px;
 
       font-size: 10px;
@@ -2038,9 +1707,7 @@
         var(--modal-accent);
     }
 
-
     .modal-name {
-
       margin: 0;
 
       font-size:
@@ -2059,9 +1726,7 @@
         rgba(0,0,0,0.45);
     }
 
-
     .modal-alias {
-
       margin-top: 11px;
 
       font-size: 12px;
@@ -2080,7 +1745,6 @@
     ===================================== */
 
     .modal-meta-row {
-
       display: flex;
 
       flex-wrap: wrap;
@@ -2090,9 +1754,7 @@
       margin-top: 19px;
     }
 
-
     .modal-genre {
-
       display: inline-flex;
 
       align-items: center;
@@ -2104,13 +1766,13 @@
 
       border:
         1px solid
-        rgba(244,182,166,0.65);
+        rgba(255,200,170,0.55);
 
       border-radius:
         999px;
 
       background:
-        rgba(244,182,166,0.10);
+        rgba(255,185,142,0.10);
 
       color:
         var(--modal-accent);
@@ -2128,7 +1790,6 @@
     ===================================== */
 
     .modal-story {
-
       margin-top: 28px;
 
       padding:
@@ -2151,9 +1812,7 @@
         blur(10px);
     }
 
-
     .modal-story-label {
-
       font-size: 9px;
 
       font-weight: bold;
@@ -2164,9 +1823,7 @@
         var(--modal-accent);
     }
 
-
     .modal-description {
-
       margin-top: 13px;
 
       font-size: 15px;
@@ -2186,7 +1843,6 @@
     ===================================== */
 
     .track-area {
-
       position: relative;
 
       margin-top: 26px;
@@ -2205,7 +1861,7 @@
       background:
         linear-gradient(
           145deg,
-          rgba(244,182,166,0.08),
+          rgba(255,185,142,0.10),
           rgba(255,255,255,0.025)
         );
 
@@ -2214,23 +1870,19 @@
         rgba(0,0,0,0.25);
     }
 
-
     .track-area.playing {
-
       border-color:
-        var(--modal-accent);
+        rgba(255,200,170,0.7);
 
       box-shadow:
         0 0 28px
-        rgba(244,182,166,0.24),
+        rgba(255,185,142,0.24),
 
         0 18px 40px
         rgba(0,0,0,0.35);
     }
 
-
     .track-top-row {
-
       position: relative;
 
       z-index: 2;
@@ -2245,9 +1897,7 @@
       gap: 14px;
     }
 
-
     .track-label {
-
       font-size: 9px;
 
       font-weight: bold;
@@ -2258,9 +1908,7 @@
         var(--modal-accent);
     }
 
-
     .track-title {
-
       margin-top: 7px;
 
       font-size:
@@ -2281,7 +1929,6 @@
     ===================================== */
 
     .mini-eq {
-
       display: flex;
 
       align-items: flex-end;
@@ -2289,15 +1936,14 @@
       gap: 3px;
 
       height: 28px;
+
+      margin-top: 2px;
     }
 
-
     .mini-eq span {
-
       display: block;
 
       width: 3px;
-
       height: 8px;
 
       border-radius: 999px;
@@ -2308,51 +1954,40 @@
       opacity: 0.5;
     }
 
-
     .track-area.playing
     .mini-eq span:nth-child(1) {
-
       animation:
         eq1 0.7s
         ease-in-out infinite;
     }
 
-
     .track-area.playing
     .mini-eq span:nth-child(2) {
-
       animation:
         eq2 0.55s
         ease-in-out infinite;
     }
 
-
     .track-area.playing
     .mini-eq span:nth-child(3) {
-
       animation:
         eq3 0.8s
         ease-in-out infinite;
     }
 
-
     .track-area.playing
     .mini-eq span:nth-child(4) {
-
       animation:
         eq2 0.65s
         ease-in-out infinite;
     }
 
-
     .track-area.playing
     .mini-eq span:nth-child(5) {
-
       animation:
         eq1 0.6s
         ease-in-out infinite;
     }
-
 
     @keyframes eq1 {
 
@@ -2367,7 +2002,6 @@
 
     }
 
-
     @keyframes eq2 {
 
       0%,
@@ -2380,7 +2014,6 @@
       }
 
     }
-
 
     @keyframes eq3 {
 
@@ -2401,7 +2034,6 @@
     ===================================== */
 
     .play-button {
-
       position: relative;
 
       z-index: 2;
@@ -2420,8 +2052,7 @@
       border-radius:
         999px;
 
-      background:
-        white;
+      background: white;
 
       color:
         #071426;
@@ -2435,15 +2066,22 @@
       cursor: pointer;
     }
 
+    .play-button:active {
+      transform:
+        scale(0.97);
+    }
 
     .track-area.playing
     .play-button {
-
       background:
         var(--modal-accent);
 
       color:
         #071426;
+
+      box-shadow:
+        0 0 20px
+        rgba(255,185,142,0.55);
     }
 
 
@@ -2452,7 +2090,6 @@
     ===================================== */
 
     .progress-wrap {
-
       position: relative;
 
       z-index: 2;
@@ -2460,18 +2097,14 @@
       margin-top: 17px;
     }
 
-
     .progress-bar {
-
       width: 100%;
 
       accent-color:
         var(--modal-accent);
     }
 
-
     .audio-time {
-
       position: relative;
 
       z-index: 2;
@@ -2500,111 +2133,82 @@
     (max-width: 768px) {
 
       .sun {
-
         width: 300px;
 
         top: 1%;
-
         right: -70px;
       }
 
-
       .moon {
-
         width: 260px;
 
         top: 3%;
-
         left: -55px;
       }
 
-
-      .festival-logo {
-
+      .apricot-logo {
         width: 92%;
       }
 
-
       .audience {
-
         width: 150%;
       }
 
-
       .memories-content {
-
         padding:
-          15px 6px;
+          15px 5px;
       }
 
-
-      .memories-board {
-
-        height: 58vh;
+      .memory-collage {
+        height:
+          min(
+            58vh,
+            500px
+          );
       }
-
 
       .memory-photo {
-
-        width: 34%;
+        width: 32%;
 
         padding:
-          3px
-          3px
-          10px;
+          4px 4px 13px;
       }
 
-
       .artists-section {
-
         padding:
           42px 12px 90px;
       }
 
-
       .modal-inner {
-
         padding:
           64px 13px 70px;
       }
 
-
       .modal-image-wrap {
-
         border-radius: 17px;
       }
 
-
       .modal-name {
-
         font-size: 38px;
       }
 
-
       .modal-story {
-
         padding:
           18px 15px;
       }
 
-
       .modal-description {
-
         font-size: 14px;
 
         line-height: 1.9;
       }
 
-
       .track-area {
-
         padding:
           19px 15px 17px;
       }
 
-
       .track-title {
-
         font-size: 20px;
       }
 
@@ -2621,7 +2225,6 @@
       .reveal-item,
       .memory-photo,
       .artist-card {
-
         opacity: 1;
 
         filter: none;
@@ -2639,9 +2242,7 @@
 <body>
 
 
-  <!-- =====================================
-       SKY
-  ====================================== -->
+  <!-- SKY -->
 
   <div class="sky-layer sky-day"></div>
 
@@ -2653,7 +2254,7 @@
   <!-- SUN -->
 
   <img
-    src="image/sun.png"
+    src="images/sun.png"
     class="sun"
     alt=""
   >
@@ -2662,7 +2263,7 @@
   <!-- MOON -->
 
   <img
-    src="image/moon.png"
+    src="images/moon.png"
     class="moon"
     alt=""
   >
@@ -2678,7 +2279,7 @@
   <div class="clouds-wrapper">
 
     <img
-      src="image/clouds.png"
+      src="images/clouds.png"
       class="clouds"
       alt=""
     >
@@ -2691,8 +2292,8 @@
   <div class="background-wrapper">
 
     <img
-      src="image/schoolback.png"
-      class="festival-background"
+      src="images/schoolback.png"
+      class="school-background"
       alt=""
     >
 
@@ -2701,23 +2302,23 @@
 
   <!-- SCHOOL -->
 
-  <div class="stage-wrapper">
+  <div class="school-wrapper">
 
     <img
-      src="image/school.png"
-      class="stage"
+      src="images/school.png"
+      class="school"
       alt=""
     >
 
   </div>
 
 
-  <!-- GIRL -->
+  <!-- GIRL / BICYCLE SILHOUETTE -->
 
   <div class="audience-wrapper">
 
     <img
-      src="image/audience01.png"
+      src="images/audience01.png"
       class="audience"
       alt=""
     >
@@ -2732,18 +2333,16 @@
   <main class="parallax-area">
 
 
-    <!-- =====================================
-         DAY
-    ====================================== -->
+    <!-- DAY / APRICOT LOGO -->
 
     <section class="section">
 
       <div class="content">
 
         <img
-          src="image/apricot.png"
-          class="festival-logo"
-          alt="apricot"
+          src="images/apricot.png"
+          class="apricot-logo"
+          alt="APRICOT"
         >
 
       </div>
@@ -2777,17 +2376,17 @@
         <div
           class="memories-subtitle reveal-item"
         >
-          FRAGMENTS OF OUR DAYS
+          FRAGMENTS OF ORDINARY DAYS
         </div>
 
 
-        <div class="memories-board">
+        <div class="memory-collage">
 
 
           <div class="memory-photo">
 
             <img
-              src="image/memory-01.png"
+              src="images/memory-01.png"
               alt=""
             >
 
@@ -2797,7 +2396,7 @@
           <div class="memory-photo">
 
             <img
-              src="image/memory-02.png"
+              src="images/memory-02.png"
               alt=""
             >
 
@@ -2807,7 +2406,7 @@
           <div class="memory-photo">
 
             <img
-              src="image/memory-03.png"
+              src="images/memory-03.png"
               alt=""
             >
 
@@ -2817,7 +2416,7 @@
           <div class="memory-photo">
 
             <img
-              src="image/memory-04.png"
+              src="images/memory-04.png"
               alt=""
             >
 
@@ -2827,7 +2426,7 @@
           <div class="memory-photo">
 
             <img
-              src="image/memory-05.png"
+              src="images/memory-05.png"
               alt=""
             >
 
@@ -2837,7 +2436,19 @@
           <div class="memory-photo">
 
             <img
-              src="image/memory-06.png"
+              src="images/memory-06.png"
+              alt=""
+            >
+
+          </div>
+
+
+          <!-- memory-07 は使用しない -->
+
+          <div class="memory-photo">
+
+            <img
+              src="images/memory-11.png"
               alt=""
             >
 
@@ -2847,7 +2458,7 @@
           <div class="memory-photo">
 
             <img
-              src="image/memory-07.png"
+              src="images/memory-08.png"
               alt=""
             >
 
@@ -2857,7 +2468,7 @@
           <div class="memory-photo">
 
             <img
-              src="image/memory-08.png"
+              src="images/memory-09.png"
               alt=""
             >
 
@@ -2867,17 +2478,7 @@
           <div class="memory-photo">
 
             <img
-              src="image/memory-09.png"
-              alt=""
-            >
-
-          </div>
-
-
-          <div class="memory-photo">
-
-            <img
-              src="image/memory-10.png"
+              src="images/memory-10.png"
               alt=""
             >
 
@@ -2903,7 +2504,7 @@
         <div
           class="headliner-small reveal-item"
         >
-          AFTER SCHOOL
+          AFTER THE SUNSET
         </div>
 
 
@@ -2912,7 +2513,7 @@
         >
 
           <span>
-            apricot
+            APRICOT
           </span>
 
         </h2>
@@ -2922,9 +2523,9 @@
           class="headliner-copy reveal-item"
         >
 
-          THE PLACE I RETURN TO.<br>
+          SOMEWHERE TO RETURN.<br>
 
-          放課後の記憶を、音楽に。
+          いつか帰る場所を、忘れないように。
 
         </div>
 
@@ -2963,11 +2564,11 @@
           <div class="headliner-stat">
 
             <span class="stat-number">
-              J-POP
+              ∞
             </span>
 
             <span class="stat-label">
-              GENRE
+              MEMORIES
             </span>
 
           </div>
@@ -3014,7 +2615,7 @@
 
 
     <div class="artists-caption">
-      MUSIC · MEMORIES · AFTER SCHOOL
+      DISCOVER HER STORY & MUSIC
     </div>
 
 
@@ -3031,8 +2632,8 @@
 
 
           <img
-            src="image/artist-01.png"
-            alt="apricot"
+            src="images/artist-001.png"
+            alt="APRICOT"
           >
 
 
@@ -3044,7 +2645,7 @@
           <div class="artist-overlay">
 
             <h3 class="artist-name">
-              apricot
+              APRICOT
             </h3>
 
           </div>
@@ -3062,7 +2663,7 @@
 
 
           <div class="artist-track-name">
-            The Place I Return To
+            Somewhere to Return
           </div>
 
 
@@ -3125,7 +2726,7 @@
           >
 
           <div class="modal-hero-label">
-            apricot
+            APRICOT
           </div>
 
         </div>
@@ -3136,6 +2737,7 @@
       <!-- INFO -->
 
       <div class="modal-info">
+
 
         <div class="modal-kicker">
           FEATURED ARTIST
@@ -3162,6 +2764,7 @@
           ></div>
 
         </div>
+
 
       </div>
 
@@ -3210,13 +2813,9 @@
           <div class="mini-eq">
 
             <span></span>
-
             <span></span>
-
             <span></span>
-
             <span></span>
-
             <span></span>
 
           </div>
@@ -3271,6 +2870,7 @@
 
     </div>
 
+
   </div>
 
 
@@ -3290,25 +2890,25 @@
       {
 
         name:
-          "apricot",
+          "APRICOT",
 
         alias:
-          "",
+          "APRICOT",
 
         genre:
           "J-POP",
 
         accent:
-          "#f4b6a6",
+          "#ffb98e",
 
         description:
-          "Coming Soon",
+          "COMING SOON",
 
         track:
-          "The Place I Return To",
+          "Somewhere to Return",
 
         image:
-          "image/artist-01-main.png",
+          "images/artist-001main.png",
 
         music:
           "music/ann.mp3"
@@ -3327,78 +2927,65 @@
         "artistModal"
       );
 
-
     const modalClose =
       document.getElementById(
         "modalClose"
       );
-
 
     const modalImage =
       document.getElementById(
         "modalImage"
       );
 
-
     const modalName =
       document.getElementById(
         "modalName"
       );
-
 
     const modalAlias =
       document.getElementById(
         "modalAlias"
       );
 
-
     const modalGenre =
       document.getElementById(
         "modalGenre"
       );
-
 
     const modalDescription =
       document.getElementById(
         "modalDescription"
       );
 
-
     const modalTrack =
       document.getElementById(
         "modalTrack"
       );
-
 
     const trackArea =
       document.getElementById(
         "trackArea"
       );
 
-
     const playButton =
       document.getElementById(
         "playButton"
       );
-
 
     const audioPlayer =
       document.getElementById(
         "audioPlayer"
       );
 
-
     const progressBar =
       document.getElementById(
         "progressBar"
       );
 
-
     const currentTimeText =
       document.getElementById(
         "currentTime"
       );
-
 
     const durationText =
       document.getElementById(
@@ -3424,18 +3011,15 @@
 
       }
 
-
       const minutes =
         Math.floor(
           seconds / 60
         );
 
-
       const secs =
         Math.floor(
           seconds % 60
         );
-
 
       return (
         minutes
@@ -3461,95 +3045,73 @@
       index
     ) {
 
-
       const artist =
         artists[index];
 
-
       audioPlayer.pause();
-
 
       audioPlayer.currentTime =
         0;
-
 
       trackArea.classList.remove(
         "playing"
       );
 
-
       playButton.textContent =
         "▶ PLAY";
-
 
       progressBar.value =
         0;
 
-
       currentTimeText.textContent =
         "0:00";
 
-
       durationText.textContent =
         "0:00";
-
 
       artistModal.style.setProperty(
         "--modal-accent",
         artist.accent
       );
 
-
       modalImage.src =
         artist.image;
-
 
       modalImage.alt =
         artist.name;
 
-
       modalName.textContent =
         artist.name;
 
-
       modalAlias.textContent =
         artist.alias;
-
 
       modalAlias.style.display =
         artist.alias
           ? "block"
           : "none";
 
-
       modalGenre.textContent =
         artist.genre;
-
 
       modalDescription.textContent =
         artist.description;
 
-
       modalTrack.textContent =
         artist.track;
-
 
       audioPlayer.src =
         artist.music;
 
-
       audioPlayer.load();
-
 
       artistModal.classList.add(
         "show"
       );
 
-
       document.body.classList.add(
         "modal-open"
       );
-
 
       artistModal.scrollTop =
         0;
@@ -3563,27 +3125,21 @@
 
     function closeArtistModal() {
 
-
       audioPlayer.pause();
-
 
       audioPlayer.currentTime =
         0;
-
 
       trackArea.classList.remove(
         "playing"
       );
 
-
       playButton.textContent =
         "▶ PLAY";
-
 
       artistModal.classList.remove(
         "show"
       );
-
 
       document.body.classList.remove(
         "modal-open"
@@ -3603,11 +3159,9 @@
       .forEach(
         card => {
 
-
           card.addEventListener(
             "click",
             () => {
-
 
               openArtistModal(
                 Number(
@@ -3615,10 +3169,8 @@
                 )
               );
 
-
             }
           );
-
 
         }
       );
@@ -3638,26 +3190,20 @@
       "click",
       async () => {
 
-
         if (
           audioPlayer.paused
         ) {
 
-
           try {
 
-
             await audioPlayer.play();
-
 
             playButton.textContent =
               "❚❚ PAUSE";
 
-
             trackArea.classList.add(
               "playing"
             );
-
 
           }
 
@@ -3665,34 +3211,26 @@
             error
           ) {
 
-
             console.log(
               error
             );
 
-
           }
-
 
         }
 
         else {
 
-
           audioPlayer.pause();
-
 
           playButton.textContent =
             "▶ PLAY";
-
 
           trackArea.classList.remove(
             "playing"
           );
 
-
         }
-
 
       }
     );
@@ -3706,12 +3244,10 @@
       "loadedmetadata",
       () => {
 
-
         durationText.textContent =
           formatTime(
             audioPlayer.duration
           );
-
 
       }
     );
@@ -3725,17 +3261,14 @@
       "timeupdate",
       () => {
 
-
         currentTimeText.textContent =
           formatTime(
             audioPlayer.currentTime
           );
 
-
         if (
           audioPlayer.duration
         ) {
-
 
           progressBar.value =
             (
@@ -3746,9 +3279,7 @@
             *
             100;
 
-
         }
-
 
       }
     );
@@ -3762,11 +3293,9 @@
       "input",
       () => {
 
-
         if (
           audioPlayer.duration
         ) {
-
 
           audioPlayer.currentTime =
             (
@@ -3777,9 +3306,7 @@
             *
             audioPlayer.duration;
 
-
         }
-
 
       }
     );
@@ -3793,30 +3320,25 @@
       "ended",
       () => {
 
-
         playButton.textContent =
           "▶ PLAY";
-
 
         trackArea.classList.remove(
           "playing"
         );
 
-
         progressBar.value =
           0;
 
-
         currentTimeText.textContent =
           "0:00";
-
 
       }
     );
 
 
     /* =====================================
-       SCROLL REVEAL
+       REVEAL
     ===================================== */
 
     const revealTargets =
@@ -3824,38 +3346,30 @@
         ".reveal-item, .memory-photo, .artist-card"
       );
 
-
     const revealObserver =
       new IntersectionObserver(
 
         entries => {
 
-
           entries.forEach(
             entry => {
-
 
               if (
                 entry.isIntersecting
               ) {
 
-
                 entry.target.classList.add(
                   "reveal"
                 );
-
 
                 revealObserver.unobserve(
                   entry.target
                 );
 
-
               }
-
 
             }
           );
-
 
         },
 
@@ -3874,18 +3388,16 @@
     revealTargets.forEach(
       target => {
 
-
         revealObserver.observe(
           target
         );
-
 
       }
     );
 
 
     /* =====================================
-       PARALLAX ELEMENTS
+       PARALLAX
     ===================================== */
 
     const skyDay =
@@ -3893,60 +3405,50 @@
         ".sky-day"
       );
 
-
     const skySunset =
       document.querySelector(
         ".sky-sunset"
       );
-
 
     const skyNight =
       document.querySelector(
         ".sky-night"
       );
 
-
     const cloudsWrapper =
       document.querySelector(
         ".clouds-wrapper"
       );
-
 
     const backgroundWrapper =
       document.querySelector(
         ".background-wrapper"
       );
 
-
-    const stageWrapper =
+    const schoolWrapper =
       document.querySelector(
-        ".stage-wrapper"
+        ".school-wrapper"
       );
-
 
     const audienceWrapper =
       document.querySelector(
         ".audience-wrapper"
       );
 
-
     const sun =
       document.querySelector(
         ".sun"
       );
-
 
     const moon =
       document.querySelector(
         ".moon"
       );
 
-
     const stars =
       document.querySelector(
         ".stars"
       );
-
 
     const parallaxArea =
       document.querySelector(
@@ -3954,47 +3456,32 @@
       );
 
 
-    /* =====================================
-       CLAMP
-    ===================================== */
-
     function clamp(
       value,
       min,
       max
     ) {
 
-
       return Math.min(
-
         Math.max(
           value,
           min
         ),
-
         max
-
       );
 
     }
 
 
-    /* =====================================
-       PARALLAX
-    ===================================== */
-
     function updateParallax() {
-
 
       const scrollY =
         window.scrollY;
-
 
       const maxParallaxScroll =
         parallaxArea.offsetHeight
         -
         window.innerHeight;
-
 
       const progress =
         clamp(
@@ -4006,9 +3493,7 @@
         );
 
 
-      /* =====================================
-         SKY
-      ====================================== */
+      /* SKY */
 
       const sunsetAmount =
         clamp(
@@ -4018,7 +3503,6 @@
           0,
           1
         );
-
 
       const nightAmount =
         clamp(
@@ -4033,32 +3517,24 @@
           1
         );
 
-
       skyDay.style.opacity =
         1
         -
         sunsetAmount;
-
 
       skySunset.style.opacity =
         progress < 0.5
           ? sunsetAmount
           : 1 - nightAmount;
 
-
       skyNight.style.opacity =
         nightAmount;
 
 
-      /* =====================================
-         CLOUDS
-      ====================================== */
+      /* CLOUDS */
 
       cloudsWrapper.style.transform =
-        `translateY(
-          ${scrollY * -0.08}px
-        )`;
-
+        `translateY(${scrollY * -0.08}px)`;
 
       cloudsWrapper.style.opacity =
         1
@@ -4067,28 +3543,20 @@
         *
         0.65;
 
-
       cloudsWrapper.style.filter =
-        `brightness(
-          ${
-            1
-            -
-            nightAmount
-            *
-            0.55
-          }
-        )`;
+        `brightness(${
+          1
+          -
+          nightAmount
+          *
+          0.55
+        })`;
 
 
-      /* =====================================
-         SCHOOL BACKGROUND
-      ====================================== */
+      /* BACKGROUND */
 
       backgroundWrapper.style.transform =
-        `translateY(
-          ${scrollY * -0.14}px
-        )`;
-
+        `translateY(${scrollY * -0.14}px)`;
 
       const backgroundFade =
         clamp(
@@ -4103,46 +3571,35 @@
           1
         );
 
-
       backgroundWrapper.style.opacity =
         1
         -
         backgroundFade;
 
 
-      /* =====================================
-         SCHOOL
-      ====================================== */
+      /* SCHOOL */
 
-      const stageHeight =
-        stageWrapper.offsetHeight;
-
+      const schoolHeight =
+        schoolWrapper.offsetHeight;
 
       const initialTop =
         window.innerHeight
         -
-        stageHeight;
-
+        schoolHeight;
 
       const moveDistance =
         -initialTop;
 
-
-      const stageMove =
+      const schoolMove =
         moveDistance
         *
         progress;
 
-
-      stageWrapper.style.transform =
-        `translateY(
-          ${stageMove}px
-        )`;
+      schoolWrapper.style.transform =
+        `translateY(${schoolMove}px)`;
 
 
-      /* =====================================
-         GIRL / BICYCLE
-      ====================================== */
+      /* GIRL / BICYCLE */
 
       const audiencePhase =
         clamp(
@@ -4157,18 +3614,15 @@
           1
         );
 
-
       const audienceStartY =
         window.innerHeight
         *
         1.10;
 
-
       const audienceEndY =
         -window.innerHeight
         *
         0.40;
-
 
       const audienceY =
         audienceStartY
@@ -4181,12 +3635,8 @@
         *
         audiencePhase;
 
-
       audienceWrapper.style.transform =
-        `translateY(
-          ${audienceY}px
-        )`;
-
+        `translateY(${audienceY}px)`;
 
       const audienceFadeIn =
         clamp(
@@ -4201,32 +3651,23 @@
           1
         );
 
-
       audienceWrapper.style.opacity =
         audienceFadeIn;
 
-
       audienceWrapper.style.filter =
-        `brightness(
-          ${
-            1
-            -
-            nightAmount
-            *
-            0.35
-          }
-        )`;
+        `brightness(${
+          1
+          -
+          nightAmount
+          *
+          0.35
+        })`;
 
 
-      /* =====================================
-         SUN
-      ====================================== */
+      /* SUN */
 
       sun.style.transform =
-        `translateY(
-          ${scrollY * 0.12}px
-        )`;
-
+        `translateY(${scrollY * 0.12}px)`;
 
       sun.style.opacity =
         clamp(
@@ -4246,9 +3687,7 @@
         );
 
 
-      /* =====================================
-         MOON
-      ====================================== */
+      /* MOON */
 
       moon.style.opacity =
         clamp(
@@ -4264,9 +3703,7 @@
         );
 
 
-      /* =====================================
-         STARS
-      ====================================== */
+      /* STARS */
 
       stars.style.opacity =
         clamp(
@@ -4282,9 +3719,7 @@
         );
 
 
-      /* =====================================
-         AFTER PARALLAX
-      ====================================== */
+      /* ARTIST SECTION */
 
       if (
         scrollY
@@ -4296,57 +3731,41 @@
         0.7
       ) {
 
-
-        stageWrapper.style.opacity =
+        schoolWrapper.style.opacity =
           0;
-
 
         audienceWrapper.style.opacity =
           0;
 
-
         cloudsWrapper.style.opacity =
           0;
-
 
         backgroundWrapper.style.opacity =
           0;
 
-
         sun.style.opacity =
           0;
-
 
         moon.style.opacity =
           0;
 
-
         stars.style.opacity =
           0;
-
 
       }
 
       else {
 
-
-        stageWrapper.style.opacity =
+        schoolWrapper.style.opacity =
           1;
-
 
         audienceWrapper.style.opacity =
           audienceFadeIn;
 
-
       }
-
 
     }
 
-
-    /* =====================================
-       EVENTS
-    ===================================== */
 
     window.addEventListener(
       "scroll",
