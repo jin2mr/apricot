@@ -10,7 +10,7 @@
     content="width=device-width, initial-scale=1.0"
   >
 
-  <title>SUMMER FESTIVAL</title>
+  <title>apricot</title>
 
 
   <style>
@@ -256,7 +256,7 @@
 
 
     /* =====================================
-       FESTIVAL BACKGROUND
+       SCHOOL BACKGROUND
     ===================================== */
 
     .background-wrapper {
@@ -294,7 +294,7 @@
 
 
     /* =====================================
-       STAGE
+       SCHOOL
     ===================================== */
 
     .stage-wrapper {
@@ -331,7 +331,7 @@
 
 
     /* =====================================
-       AUDIENCE
+       GIRL / BICYCLE
     ===================================== */
 
     .audience-wrapper {
@@ -408,7 +408,7 @@
 
 
     /* =====================================
-       FESTIVAL LOGO
+       APRICOT LOGO
     ===================================== */
 
     .festival-logo {
@@ -434,7 +434,7 @@
 
 
     /* =====================================
-       共通 REVEAL
+       COMMON REVEAL
     ===================================== */
 
     .reveal-item {
@@ -480,24 +480,8 @@
 
 
     /* =====================================
-       TIMETABLE
+       SECTION EYEBROW
     ===================================== */
-
-    .timetable-content {
-
-      position: relative;
-
-      z-index: 9;
-
-      width: 100%;
-
-      max-width: 680px;
-
-      margin: auto;
-
-      padding:
-        20px 16px;
-    }
 
     .section-eyebrow {
 
@@ -512,7 +496,29 @@
       opacity: 0.75;
     }
 
-    .timetable-title {
+
+    /* =====================================
+       MEMORIES
+    ===================================== */
+
+    .memories-content {
+
+      position: relative;
+
+      z-index: 9;
+
+      width: 100%;
+
+      max-width: 900px;
+
+      margin: auto;
+
+      padding:
+        20px 12px;
+    }
+
+
+    .memories-title {
 
       margin: 0;
 
@@ -528,84 +534,63 @@
       line-height: 1;
     }
 
-    .timetable-subtitle {
+
+    .memories-subtitle {
 
       margin:
-        10px 0 22px;
+        10px 0 20px;
 
-      font-size: 13px;
+      font-size: 11px;
 
       letter-spacing: 3px;
 
-      opacity: 0.75;
+      opacity: 0.70;
     }
 
-    .timetable {
+
+    .memories-board {
 
       position: relative;
 
       width: 100%;
 
+      height: 62vh;
+
+      max-height: 610px;
+
       margin: 0 auto;
-
-      padding-left: 9px;
-
-      text-align: left;
     }
 
-    .timetable::before {
 
-      content: "";
+    .memory-photo {
 
       position: absolute;
 
-      top: 5px;
+      width: 31%;
 
-      bottom: 5px;
+      max-width: 220px;
 
-      left: 69px;
-
-      width: 1px;
+      padding:
+        5px
+        5px
+        15px;
 
       background:
-        linear-gradient(
-          to bottom,
-          rgba(255,255,255,0),
-          rgba(255,255,255,0.65),
-          rgba(255,255,255,0)
-        );
-    }
+        #f7f4ed;
 
-    .schedule-item {
-
-      position: relative;
-
-      display: grid;
-
-      grid-template-columns:
-        60px 1fr;
-
-      gap: 18px;
-
-      align-items: center;
-
-      margin-bottom: 8px;
-
-      min-height: 58px;
-
-
-      /* ★登場用 */
+      box-shadow:
+        0 10px 25px
+        rgba(0,0,0,0.28);
 
       opacity: 0;
-
-      transform:
-        translateY(28px);
 
       filter:
         blur(5px);
 
       transition:
-        opacity 0.7s
+        opacity 0.8s ease,
+
+        transform 0.8s
         cubic-bezier(
           0.22,
           1,
@@ -613,150 +598,255 @@
           1
         ),
 
-        transform 0.7s
-        cubic-bezier(
-          0.22,
-          1,
-          0.36,
-          1
-        ),
-
-        filter 0.7s ease;
+        filter 0.8s ease;
     }
 
-    .schedule-item.reveal {
+
+    .memory-photo img {
+
+      display: block;
+
+      width: 100%;
+
+      height: auto;
+    }
+
+
+    .memory-photo.reveal {
 
       opacity: 1;
-
-      transform:
-        translateY(0);
 
       filter:
         blur(0);
     }
 
 
-    /* タイムテーブル各項目の遅延 */
+    /* =====================================
+       MEMORY POSITIONS
+    ===================================== */
 
-    .schedule-item:nth-child(1) {
-      transition-delay: 0.05s;
-    }
+    .memory-photo:nth-child(1) {
 
-    .schedule-item:nth-child(2) {
-      transition-delay: 0.11s;
-    }
+      left: 3%;
 
-    .schedule-item:nth-child(3) {
-      transition-delay: 0.17s;
-    }
-
-    .schedule-item:nth-child(4) {
-      transition-delay: 0.23s;
-    }
-
-    .schedule-item:nth-child(5) {
-      transition-delay: 0.29s;
-    }
-
-    .schedule-item:nth-child(6) {
-      transition-delay: 0.35s;
-    }
-
-
-    .schedule-time {
-
-      text-align: right;
-
-      font-size: 13px;
-
-      font-weight: bold;
-
-      letter-spacing: 1px;
-
-      opacity: 0.9;
-    }
-
-    .schedule-item::after {
-
-      content: "";
-
-      position: absolute;
-
-      left: 64px;
-
-      top: 50%;
-
-      width: 11px;
-
-      height: 11px;
+      top: 2%;
 
       transform:
-        translateY(-50%);
+        translateY(30px)
+        rotate(-8deg);
 
-      border-radius: 50%;
-
-      background: white;
-
-      box-shadow:
-        0 0 15px
-        rgba(255,255,255,0.8);
+      transition-delay:
+        0.02s;
     }
 
-    .schedule-card {
 
-      margin-left: 5px;
+    .memory-photo:nth-child(2) {
 
-      padding:
-        10px 14px;
+      left: 35%;
 
-      border:
-        1px solid
-        rgba(255,255,255,0.18);
+      top: 0%;
 
-      border-radius: 12px;
+      transform:
+        translateY(30px)
+        rotate(5deg);
 
-      background:
-        linear-gradient(
-          135deg,
-          rgba(255,255,255,0.17),
-          rgba(255,255,255,0.05)
-        );
-
-      backdrop-filter:
-        blur(8px);
-
-      box-shadow:
-        0 8px 25px
-        rgba(0,0,0,0.12);
+      transition-delay:
+        0.07s;
     }
 
-    .schedule-artist {
 
-      font-size: 15px;
+    .memory-photo:nth-child(3) {
 
-      font-weight: bold;
+      right: 2%;
 
-      letter-spacing: 1px;
+      top: 7%;
+
+      transform:
+        translateY(30px)
+        rotate(-4deg);
+
+      transition-delay:
+        0.12s;
     }
 
-    .schedule-track {
 
-      margin-top: 3px;
+    .memory-photo:nth-child(4) {
 
-      font-size: 11px;
+      left: 10%;
 
-      opacity: 0.7;
+      top: 31%;
 
-      white-space: nowrap;
+      transform:
+        translateY(30px)
+        rotate(6deg);
 
-      overflow: hidden;
+      transition-delay:
+        0.17s;
+    }
 
-      text-overflow: ellipsis;
+
+    .memory-photo:nth-child(5) {
+
+      left: 39%;
+
+      top: 27%;
+
+      transform:
+        translateY(30px)
+        rotate(-7deg);
+
+      transition-delay:
+        0.22s;
+    }
+
+
+    .memory-photo:nth-child(6) {
+
+      right: 5%;
+
+      top: 35%;
+
+      transform:
+        translateY(30px)
+        rotate(8deg);
+
+      transition-delay:
+        0.27s;
+    }
+
+
+    .memory-photo:nth-child(7) {
+
+      left: 1%;
+
+      top: 61%;
+
+      transform:
+        translateY(30px)
+        rotate(-5deg);
+
+      transition-delay:
+        0.32s;
+    }
+
+
+    .memory-photo:nth-child(8) {
+
+      left: 28%;
+
+      top: 58%;
+
+      transform:
+        translateY(30px)
+        rotate(4deg);
+
+      transition-delay:
+        0.37s;
+    }
+
+
+    .memory-photo:nth-child(9) {
+
+      right: 20%;
+
+      top: 63%;
+
+      transform:
+        translateY(30px)
+        rotate(-7deg);
+
+      transition-delay:
+        0.42s;
+    }
+
+
+    .memory-photo:nth-child(10) {
+
+      right: 0%;
+
+      top: 57%;
+
+      transform:
+        translateY(30px)
+        rotate(6deg);
+
+      transition-delay:
+        0.47s;
+    }
+
+
+    .memory-photo:nth-child(1).reveal {
+
+      transform:
+        rotate(-8deg);
+    }
+
+
+    .memory-photo:nth-child(2).reveal {
+
+      transform:
+        rotate(5deg);
+    }
+
+
+    .memory-photo:nth-child(3).reveal {
+
+      transform:
+        rotate(-4deg);
+    }
+
+
+    .memory-photo:nth-child(4).reveal {
+
+      transform:
+        rotate(6deg);
+    }
+
+
+    .memory-photo:nth-child(5).reveal {
+
+      transform:
+        rotate(-7deg);
+    }
+
+
+    .memory-photo:nth-child(6).reveal {
+
+      transform:
+        rotate(8deg);
+    }
+
+
+    .memory-photo:nth-child(7).reveal {
+
+      transform:
+        rotate(-5deg);
+    }
+
+
+    .memory-photo:nth-child(8).reveal {
+
+      transform:
+        rotate(4deg);
+    }
+
+
+    .memory-photo:nth-child(9).reveal {
+
+      transform:
+        rotate(-7deg);
+    }
+
+
+    .memory-photo:nth-child(10).reveal {
+
+      transform:
+        rotate(6deg);
     }
 
 
     /* =====================================
-       HEADLINER
+       APRICOT / NIGHT
     ===================================== */
 
     .headliner-content {
@@ -777,6 +867,7 @@
       text-align: center;
     }
 
+
     .headliner-small {
 
       margin-bottom: 10px;
@@ -788,7 +879,10 @@
       letter-spacing: 7px;
 
       opacity: 0.7;
+
+      transition-delay: 0.02s;
     }
+
 
     .headliner-title {
 
@@ -808,7 +902,11 @@
       text-shadow:
         0 10px 40px
         rgba(0,0,0,0.45);
+
+      transition-delay:
+        0.10s;
     }
+
 
     .headliner-title span {
 
@@ -816,8 +914,8 @@
         linear-gradient(
           90deg,
           #ffffff,
-          #b7ddff,
-          #ffb7dd,
+          #ffd3c9,
+          #ffc0cb,
           #ffffff
         );
 
@@ -839,19 +937,23 @@
         infinite;
     }
 
+
     @keyframes titleGlow {
 
       from {
+
         background-position:
           0% center;
       }
 
       to {
+
         background-position:
           200% center;
       }
 
     }
+
 
     .headliner-copy {
 
@@ -865,7 +967,11 @@
       letter-spacing: 3px;
 
       opacity: 0.85;
+
+      transition-delay:
+        0.18s;
     }
+
 
     .headliner-stats {
 
@@ -876,7 +982,11 @@
       gap: 12px;
 
       margin-top: 27px;
+
+      transition-delay:
+        0.26s;
     }
+
 
     .headliner-stat {
 
@@ -896,6 +1006,7 @@
         rgba(255,255,255,0.4);
     }
 
+
     .stat-number {
 
       display: block;
@@ -904,6 +1015,7 @@
 
       font-weight: bold;
     }
+
 
     .stat-label {
 
@@ -919,31 +1031,8 @@
     }
 
 
-    /* HEADLINER登場順 */
-
-    .headliner-small {
-      transition-delay: 0.02s;
-    }
-
-    .headliner-title {
-      transition-delay: 0.10s;
-    }
-
-    .headliner-copy {
-      transition-delay: 0.18s;
-    }
-
-    .headliner-stats {
-      transition-delay: 0.26s;
-    }
-
-    .artists-cta {
-      transition-delay: 0.34s;
-    }
-
-
     /* =====================================
-       ARTISTS CTA
+       ARTIST CTA
     ===================================== */
 
     .artists-cta {
@@ -982,13 +1071,18 @@
 
       backdrop-filter:
         blur(8px);
+
+      transition-delay:
+        0.34s;
     }
+
 
     .artists-cta:active {
 
       transform:
         scale(0.96);
     }
+
 
     .cta-arrow {
 
@@ -1002,6 +1096,7 @@
         ease-in-out
         infinite;
     }
+
 
     @keyframes arrowBounce {
 
@@ -1022,7 +1117,7 @@
 
 
     /* =====================================
-       ARTISTS SECTION
+       ARTIST SECTION
     ===================================== */
 
     .artists-section {
@@ -1044,6 +1139,7 @@
         55px 18px 110px;
     }
 
+
     .artists-title {
 
       margin:
@@ -1061,6 +1157,7 @@
       letter-spacing: 8px;
     }
 
+
     .artists-caption {
 
       margin:
@@ -1077,25 +1174,18 @@
 
 
     /* =====================================
-       ARTISTS GRID
+       ARTIST GRID
     ===================================== */
 
     .artists-grid {
 
-      display: grid;
+      display: flex;
 
-      grid-template-columns:
-        repeat(
-          2,
-          minmax(0,1fr)
-        );
-
-      gap:
-        24px 14px;
+      justify-content: center;
 
       width: 100%;
 
-      max-width: 900px;
+      max-width: 600px;
 
       margin: 0 auto;
     }
@@ -1108,9 +1198,13 @@
     .artist-card {
 
       --accent:
-        #ffffff;
+        #f4b6a6;
 
       position: relative;
+
+      width: 100%;
+
+      max-width: 520px;
 
       min-width: 0;
 
@@ -1138,9 +1232,6 @@
       backdrop-filter:
         blur(10px);
 
-
-      /* スクロール登場 */
-
       opacity: 0;
 
       transform:
@@ -1149,7 +1240,6 @@
 
       filter:
         blur(5px);
-
 
       transition:
         opacity 0.75s
@@ -1175,6 +1265,7 @@
         box-shadow 0.25s ease;
     }
 
+
     .artist-card.reveal {
 
       opacity: 1;
@@ -1185,43 +1276,6 @@
 
       filter:
         blur(0);
-    }
-
-
-    .artist-card:nth-child(1) {
-      --accent: #62ff9b;
-
-      transition-delay: 0.00s;
-    }
-
-    .artist-card:nth-child(2) {
-      --accent: #73b7ff;
-
-      transition-delay: 0.10s;
-    }
-
-    .artist-card:nth-child(3) {
-      --accent: #ff82d8;
-
-      transition-delay: 0.06s;
-    }
-
-    .artist-card:nth-child(4) {
-      --accent: #c78cff;
-
-      transition-delay: 0.16s;
-    }
-
-    .artist-card:nth-child(5) {
-      --accent: #ff6f79;
-
-      transition-delay: 0.06s;
-    }
-
-    .artist-card:nth-child(6) {
-      --accent: #89efff;
-
-      transition-delay: 0.16s;
     }
 
 
@@ -1261,16 +1315,6 @@
 
       border-color:
         var(--accent);
-
-      box-shadow:
-        0 0 22px
-        color-mix(
-          in srgb,
-          var(--accent) 35%,
-          transparent
-        ),
-        0 12px 25px
-        rgba(0,0,0,0.30);
     }
 
 
@@ -1292,6 +1336,7 @@
       background: #111;
     }
 
+
     .artist-image img {
 
       display: block;
@@ -1312,12 +1357,14 @@
         );
     }
 
+
     .artist-card:active
     .artist-image img {
 
       transform:
         scale(1.035);
     }
+
 
     .artist-image::after {
 
@@ -1340,47 +1387,7 @@
 
 
     /* =====================================
-       ARTIST TIME
-    ===================================== */
-
-    .artist-time {
-
-      position: absolute;
-
-      top: 10px;
-
-      left: 10px;
-
-      z-index: 3;
-
-      padding:
-        6px 9px;
-
-      border-radius:
-        999px;
-
-      background:
-        rgba(5,12,28,0.72);
-
-      border:
-        1px solid
-        rgba(255,255,255,0.22);
-
-      backdrop-filter:
-        blur(8px);
-
-      font-size: 10px;
-
-      font-weight: bold;
-
-      letter-spacing: 1.5px;
-
-      color: white;
-    }
-
-
-    /* =====================================
-       GENRE TAG
+       GENRE
     ===================================== */
 
     .artist-genre-tag {
@@ -1393,8 +1400,6 @@
 
       z-index: 3;
 
-      max-width: 56%;
-
       padding:
         6px 9px;
 
@@ -1402,19 +1407,11 @@
         999px;
 
       background:
-        color-mix(
-          in srgb,
-          var(--accent) 24%,
-          rgba(5,12,28,0.75)
-        );
+        rgba(244,182,166,0.22);
 
       border:
         1px solid
-        color-mix(
-          in srgb,
-          var(--accent) 55%,
-          rgba(255,255,255,0.2)
-        );
+        rgba(244,182,166,0.6);
 
       backdrop-filter:
         blur(8px);
@@ -1426,12 +1423,6 @@
       letter-spacing: 1px;
 
       color: white;
-
-      white-space: nowrap;
-
-      overflow: hidden;
-
-      text-overflow: ellipsis;
     }
 
 
@@ -1454,15 +1445,16 @@
       text-align: left;
     }
 
+
     .artist-name {
 
       margin: 0;
 
       font-size:
         clamp(
-          16px,
-          4vw,
-          24px
+          22px,
+          6vw,
+          36px
         );
 
       line-height: 1.1;
@@ -1488,10 +1480,11 @@
       position: relative;
 
       padding:
-        11px 12px 14px;
+        14px 14px 17px;
 
       text-align: left;
     }
+
 
     .artist-track-label {
 
@@ -1507,13 +1500,12 @@
       opacity: 0.9;
     }
 
+
     .artist-track-name {
 
-      margin-top: 5px;
+      margin-top: 6px;
 
-      min-height: 30px;
-
-      font-size: 12px;
+      font-size: 14px;
 
       line-height: 1.35;
 
@@ -1522,6 +1514,7 @@
       color:
         rgba(255,255,255,0.90);
     }
+
 
     .artist-open {
 
@@ -1532,9 +1525,9 @@
       justify-content:
         space-between;
 
-      margin-top: 10px;
+      margin-top: 12px;
 
-      padding-top: 9px;
+      padding-top: 10px;
 
       border-top:
         1px solid
@@ -1548,6 +1541,7 @@
 
       opacity: 0.55;
     }
+
 
     .artist-open-arrow {
 
@@ -1567,7 +1561,7 @@
     .artist-modal {
 
       --modal-accent:
-        #89efff;
+        #f4b6a6;
 
       position: fixed;
 
@@ -1656,7 +1650,7 @@
 
 
     /* =====================================
-       MODAL OPEN ANIMATION
+       MODAL ANIMATION
     ===================================== */
 
     .modal-hero,
@@ -1809,7 +1803,6 @@
           blur(7px);
       }
 
-
       100% {
 
         opacity: 1;
@@ -1837,7 +1830,6 @@
         filter:
           blur(8px);
       }
-
 
       100% {
 
@@ -1893,15 +1885,6 @@
       box-shadow:
         0 8px 25px
         rgba(0,0,0,0.30);
-
-      transition:
-        transform 0.2s ease;
-    }
-
-    .modal-close:active {
-
-      transform:
-        scale(0.90);
     }
 
 
@@ -1913,6 +1896,7 @@
 
       position: relative;
     }
+
 
     .modal-image-wrap {
 
@@ -1935,15 +1919,9 @@
 
       box-shadow:
         0 24px 55px
-        rgba(0,0,0,0.45),
-
-        0 0 35px
-        color-mix(
-          in srgb,
-          var(--modal-accent) 14%,
-          transparent
-        );
+        rgba(0,0,0,0.45);
     }
+
 
     .modal-image-wrap::after {
 
@@ -1963,6 +1941,7 @@
 
       pointer-events: none;
     }
+
 
     .modal-image {
 
@@ -2014,18 +1993,10 @@
 
       border:
         1px solid
-        color-mix(
-          in srgb,
-          var(--modal-accent) 60%,
-          rgba(255,255,255,0.18)
-        );
+        rgba(244,182,166,0.6);
 
       background:
-        color-mix(
-          in srgb,
-          var(--modal-accent) 18%,
-          rgba(5,10,20,0.72)
-        );
+        rgba(5,10,20,0.72);
 
       backdrop-filter:
         blur(10px);
@@ -2052,6 +2023,7 @@
       margin-top: 26px;
     }
 
+
     .modal-kicker {
 
       margin-bottom: 8px;
@@ -2064,9 +2036,8 @@
 
       color:
         var(--modal-accent);
-
-      opacity: 0;
     }
+
 
     .modal-name {
 
@@ -2087,6 +2058,7 @@
         0 8px 30px
         rgba(0,0,0,0.45);
     }
+
 
     .modal-alias {
 
@@ -2118,6 +2090,7 @@
       margin-top: 19px;
     }
 
+
     .modal-genre {
 
       display: inline-flex;
@@ -2131,21 +2104,13 @@
 
       border:
         1px solid
-        color-mix(
-          in srgb,
-          var(--modal-accent) 65%,
-          rgba(255,255,255,0.18)
-        );
+        rgba(244,182,166,0.65);
 
       border-radius:
         999px;
 
       background:
-        color-mix(
-          in srgb,
-          var(--modal-accent) 13%,
-          rgba(255,255,255,0.03)
-        );
+        rgba(244,182,166,0.10);
 
       color:
         var(--modal-accent);
@@ -2155,37 +2120,6 @@
       font-weight: bold;
 
       letter-spacing: 2px;
-    }
-
-    .modal-time {
-
-      display: inline-flex;
-
-      align-items: center;
-
-      min-height: 34px;
-
-      padding:
-        7px 13px;
-
-      border:
-        1px solid
-        rgba(255,255,255,0.15);
-
-      border-radius:
-        999px;
-
-      background:
-        rgba(255,255,255,0.04);
-
-      font-size: 10px;
-
-      font-weight: bold;
-
-      letter-spacing: 2px;
-
-      color:
-        rgba(255,255,255,0.72);
     }
 
 
@@ -2217,6 +2151,7 @@
         blur(10px);
     }
 
+
     .modal-story-label {
 
       font-size: 9px;
@@ -2228,6 +2163,7 @@
       color:
         var(--modal-accent);
     }
+
 
     .modal-description {
 
@@ -2269,71 +2205,27 @@
       background:
         linear-gradient(
           145deg,
-          color-mix(
-            in srgb,
-            var(--modal-accent) 10%,
-            rgba(255,255,255,0.04)
-          ),
+          rgba(244,182,166,0.08),
           rgba(255,255,255,0.025)
         );
 
       box-shadow:
         0 15px 40px
         rgba(0,0,0,0.25);
-
-      transition:
-        border-color 0.3s ease,
-        box-shadow 0.3s ease;
     }
 
 
     .track-area.playing {
 
       border-color:
-        color-mix(
-          in srgb,
-          var(--modal-accent) 70%,
-          rgba(255,255,255,0.2)
-        );
+        var(--modal-accent);
 
       box-shadow:
         0 0 28px
-        color-mix(
-          in srgb,
-          var(--modal-accent) 24%,
-          transparent
-        ),
+        rgba(244,182,166,0.24),
 
         0 18px 40px
         rgba(0,0,0,0.35);
-    }
-
-
-    .track-area::before {
-
-      content: "";
-
-      position: absolute;
-
-      width: 150px;
-
-      height: 150px;
-
-      right: -55px;
-
-      top: -60px;
-
-      border-radius: 50%;
-
-      background:
-        var(--modal-accent);
-
-      filter:
-        blur(65px);
-
-      opacity: 0.12;
-
-      pointer-events: none;
     }
 
 
@@ -2353,6 +2245,7 @@
       gap: 14px;
     }
 
+
     .track-label {
 
       font-size: 9px;
@@ -2364,6 +2257,7 @@
       color:
         var(--modal-accent);
     }
+
 
     .track-title {
 
@@ -2395,9 +2289,8 @@
       gap: 3px;
 
       height: 28px;
-
-      margin-top: 2px;
     }
+
 
     .mini-eq span {
 
@@ -2415,6 +2308,7 @@
       opacity: 0.5;
     }
 
+
     .track-area.playing
     .mini-eq span:nth-child(1) {
 
@@ -2422,6 +2316,7 @@
         eq1 0.7s
         ease-in-out infinite;
     }
+
 
     .track-area.playing
     .mini-eq span:nth-child(2) {
@@ -2431,6 +2326,7 @@
         ease-in-out infinite;
     }
 
+
     .track-area.playing
     .mini-eq span:nth-child(3) {
 
@@ -2439,6 +2335,7 @@
         ease-in-out infinite;
     }
 
+
     .track-area.playing
     .mini-eq span:nth-child(4) {
 
@@ -2446,6 +2343,7 @@
         eq2 0.65s
         ease-in-out infinite;
     }
+
 
     .track-area.playing
     .mini-eq span:nth-child(5) {
@@ -2469,6 +2367,7 @@
 
     }
 
+
     @keyframes eq2 {
 
       0%,
@@ -2481,6 +2380,7 @@
       }
 
     }
+
 
     @keyframes eq3 {
 
@@ -2533,19 +2433,8 @@
       letter-spacing: 3px;
 
       cursor: pointer;
-
-      transition:
-        transform 0.2s ease,
-        background 0.3s ease,
-        color 0.3s ease,
-        box-shadow 0.3s ease;
     }
 
-    .play-button:active {
-
-      transform:
-        scale(0.97);
-    }
 
     .track-area.playing
     .play-button {
@@ -2555,14 +2444,6 @@
 
       color:
         #071426;
-
-      box-shadow:
-        0 0 20px
-        color-mix(
-          in srgb,
-          var(--modal-accent) 55%,
-          transparent
-        );
     }
 
 
@@ -2579,6 +2460,7 @@
       margin-top: 17px;
     }
 
+
     .progress-bar {
 
       width: 100%;
@@ -2586,6 +2468,7 @@
       accent-color:
         var(--modal-accent);
     }
+
 
     .audio-time {
 
@@ -2625,6 +2508,7 @@
         right: -70px;
       }
 
+
       .moon {
 
         width: 260px;
@@ -2634,87 +2518,47 @@
         left: -55px;
       }
 
+
       .festival-logo {
 
         width: 92%;
       }
+
 
       .audience {
 
         width: 150%;
       }
 
+
+      .memories-content {
+
+        padding:
+          15px 6px;
+      }
+
+
+      .memories-board {
+
+        height: 58vh;
+      }
+
+
+      .memory-photo {
+
+        width: 34%;
+
+        padding:
+          3px
+          3px
+          10px;
+      }
+
+
       .artists-section {
 
         padding:
           42px 12px 90px;
-      }
-
-      .artists-grid {
-
-        gap:
-          18px 10px;
-      }
-
-      .artist-card {
-
-        border-radius: 13px;
-      }
-
-      .artist-time {
-
-        top: 7px;
-
-        left: 7px;
-
-        padding:
-          5px 7px;
-
-        font-size: 8px;
-      }
-
-      .artist-genre-tag {
-
-        top: 7px;
-
-        right: 7px;
-
-        padding:
-          5px 7px;
-
-        font-size: 7px;
-      }
-
-      .artist-overlay {
-
-        left: 9px;
-
-        right: 9px;
-
-        bottom: 8px;
-      }
-
-      .artist-name {
-
-        font-size: 16px;
-      }
-
-      .artist-info {
-
-        padding:
-          9px 9px 12px;
-      }
-
-      .artist-track-name {
-
-        font-size: 10px;
-
-        min-height: 28px;
-      }
-
-      .artist-open {
-
-        font-size: 7px;
       }
 
 
@@ -2724,21 +2568,25 @@
           64px 13px 70px;
       }
 
+
       .modal-image-wrap {
 
         border-radius: 17px;
       }
+
 
       .modal-name {
 
         font-size: 38px;
       }
 
+
       .modal-story {
 
         padding:
           18px 15px;
       }
+
 
       .modal-description {
 
@@ -2747,11 +2595,13 @@
         line-height: 1.9;
       }
 
+
       .track-area {
 
         padding:
           19px 15px 17px;
       }
+
 
       .track-title {
 
@@ -2769,46 +2619,14 @@
     (prefers-reduced-motion: reduce) {
 
       .reveal-item,
-      .schedule-item,
+      .memory-photo,
       .artist-card {
 
         opacity: 1;
 
-        transform: none;
-
         filter: none;
 
         transition: none;
-      }
-
-      .artist-modal.show
-      .modal-hero,
-
-      .artist-modal.show
-      .modal-kicker,
-
-      .artist-modal.show
-      .modal-name,
-
-      .artist-modal.show
-      .modal-alias,
-
-      .artist-modal.show
-      .modal-meta-row,
-
-      .artist-modal.show
-      .modal-story,
-
-      .artist-modal.show
-      .track-area {
-
-        opacity: 1;
-
-        transform: none;
-
-        filter: none;
-
-        animation: none;
       }
 
     }
@@ -2821,7 +2639,9 @@
 <body>
 
 
-  <!-- SKY -->
+  <!-- =====================================
+       SKY
+  ====================================== -->
 
   <div class="sky-layer sky-day"></div>
 
@@ -2866,12 +2686,12 @@
   </div>
 
 
-  <!-- BACKGROUND -->
+  <!-- SCHOOL BACKGROUND -->
 
   <div class="background-wrapper">
 
     <img
-      src="images/festival-background.png"
+      src="images/schoolback.png"
       class="festival-background"
       alt=""
     >
@@ -2879,12 +2699,12 @@
   </div>
 
 
-  <!-- STAGE -->
+  <!-- SCHOOL -->
 
   <div class="stage-wrapper">
 
     <img
-      src="images/stage-main.png"
+      src="images/school.png"
       class="stage"
       alt=""
     >
@@ -2892,12 +2712,12 @@
   </div>
 
 
-  <!-- AUDIENCE -->
+  <!-- GIRL -->
 
   <div class="audience-wrapper">
 
     <img
-      src="images/audience.png"
+      src="images/audience01.png"
       class="audience"
       alt=""
     >
@@ -2912,16 +2732,18 @@
   <main class="parallax-area">
 
 
-    <!-- DAY -->
+    <!-- =====================================
+         DAY
+    ====================================== -->
 
     <section class="section">
 
       <div class="content">
 
         <img
-          src="images/summerfes.png"
+          src="images/apricot.png"
           class="festival-logo"
-          alt="SUMMER FES"
+          alt="apricot"
         >
 
       </div>
@@ -2929,159 +2751,135 @@
     </section>
 
 
-    <!-- SUNSET / TIMETABLE -->
+    <!-- =====================================
+         SUNSET / MEMORIES
+    ====================================== -->
 
     <section class="section">
 
-      <div class="timetable-content">
+      <div class="memories-content">
 
 
         <div
           class="section-eyebrow reveal-item"
         >
-          SUNSET SESSION
+          AFTER SCHOOL
         </div>
 
 
         <h2
-          class="timetable-title reveal-item"
+          class="memories-title reveal-item"
         >
-          TIMETABLE
+          MEMORIES
         </h2>
 
 
         <div
-          class="timetable-subtitle reveal-item"
+          class="memories-subtitle reveal-item"
         >
-          MAIN STAGE · TODAY
+          FRAGMENTS OF OUR DAYS
         </div>
 
 
-        <div class="timetable">
+        <div class="memories-board">
 
 
-          <div class="schedule-item">
+          <div class="memory-photo">
 
-            <div class="schedule-time">
-              16:30
-            </div>
-
-            <div class="schedule-card">
-
-              <div class="schedule-artist">
-                本屋敷 縁
-              </div>
-
-              <div class="schedule-track">
-                Green flame
-              </div>
-
-            </div>
+            <img
+              src="images/memory-01.png"
+              alt=""
+            >
 
           </div>
 
 
-          <div class="schedule-item">
+          <div class="memory-photo">
 
-            <div class="schedule-time">
-              17:15
-            </div>
-
-            <div class="schedule-card">
-
-              <div class="schedule-artist">
-                田楽良介
-              </div>
-
-              <div class="schedule-track">
-                Run through the night
-              </div>
-
-            </div>
+            <img
+              src="images/memory-02.png"
+              alt=""
+            >
 
           </div>
 
 
-          <div class="schedule-item">
+          <div class="memory-photo">
 
-            <div class="schedule-time">
-              18:00
-            </div>
-
-            <div class="schedule-card">
-
-              <div class="schedule-artist">
-                もぶうさ
-              </div>
-
-              <div class="schedule-track">
-                カートに乗って出発進行！
-              </div>
-
-            </div>
+            <img
+              src="images/memory-03.png"
+              alt=""
+            >
 
           </div>
 
 
-          <div class="schedule-item">
+          <div class="memory-photo">
 
-            <div class="schedule-time">
-              18:45
-            </div>
-
-            <div class="schedule-card">
-
-              <div class="schedule-artist">
-                ヴェレーノ
-              </div>
-
-              <div class="schedule-track">
-                Veleno
-              </div>
-
-            </div>
+            <img
+              src="images/memory-04.png"
+              alt=""
+            >
 
           </div>
 
 
-          <div class="schedule-item">
+          <div class="memory-photo">
 
-            <div class="schedule-time">
-              19:30
-            </div>
-
-            <div class="schedule-card">
-
-              <div class="schedule-artist">
-                田楽麻美
-              </div>
-
-              <div class="schedule-track">
-                クズな私の輪郭
-              </div>
-
-            </div>
+            <img
+              src="images/memory-05.png"
+              alt=""
+            >
 
           </div>
 
 
-          <div class="schedule-item">
+          <div class="memory-photo">
 
-            <div class="schedule-time">
-              20:30
-            </div>
+            <img
+              src="images/memory-06.png"
+              alt=""
+            >
 
-            <div class="schedule-card">
+          </div>
 
-              <div class="schedule-artist">
-                サドキエル
-              </div>
 
-              <div class="schedule-track">
-                fake
-              </div>
+          <div class="memory-photo">
 
-            </div>
+            <img
+              src="images/memory-07.png"
+              alt=""
+            >
+
+          </div>
+
+
+          <div class="memory-photo">
+
+            <img
+              src="images/memory-08.png"
+              alt=""
+            >
+
+          </div>
+
+
+          <div class="memory-photo">
+
+            <img
+              src="images/memory-09.png"
+              alt=""
+            >
+
+          </div>
+
+
+          <div class="memory-photo">
+
+            <img
+              src="images/memory-10.png"
+              alt=""
+            >
 
           </div>
 
@@ -3093,7 +2891,9 @@
     </section>
 
 
-    <!-- NIGHT / HEADLINER -->
+    <!-- =====================================
+         NIGHT / APRICOT
+    ====================================== -->
 
     <section class="section">
 
@@ -3103,7 +2903,7 @@
         <div
           class="headliner-small reveal-item"
         >
-          TONIGHT
+          AFTER SCHOOL
         </div>
 
 
@@ -3112,7 +2912,7 @@
         >
 
           <span>
-            HEADLINER
+            apricot
           </span>
 
         </h2>
@@ -3122,9 +2922,9 @@
           class="headliner-copy reveal-item"
         >
 
-          THE NIGHT IS JUST BEGINNING.<br>
+          THE PLACE I RETURN TO.<br>
 
-          それぞれの物語と音楽を、その先へ。
+          放課後の記憶を、音楽に。
 
         </div>
 
@@ -3137,24 +2937,11 @@
           <div class="headliner-stat">
 
             <span class="stat-number">
-              6
+              1
             </span>
 
             <span class="stat-label">
-              ARTISTS
-            </span>
-
-          </div>
-
-
-          <div class="headliner-stat">
-
-            <span class="stat-number">
-              6
-            </span>
-
-            <span class="stat-label">
-              TRACKS
+              ARTIST
             </span>
 
           </div>
@@ -3167,7 +2954,20 @@
             </span>
 
             <span class="stat-label">
-              NIGHT
+              TRACK
+            </span>
+
+          </div>
+
+
+          <div class="headliner-stat">
+
+            <span class="stat-number">
+              J-POP
+            </span>
+
+            <span class="stat-label">
+              GENRE
             </span>
 
           </div>
@@ -3177,11 +2977,11 @@
 
 
         <a
-          href="#artists"
+          href="#artist"
           class="artists-cta reveal-item"
         >
 
-          MEET THE ARTISTS
+          DISCOVER APRICOT
 
           <span class="cta-arrow">
             ↓
@@ -3199,70 +2999,72 @@
 
 
   <!-- =====================================
-       ARTISTS
+       ARTIST
   ====================================== -->
 
   <section
     class="artists-section"
-    id="artists"
+    id="artist"
   >
 
 
     <h2 class="artists-title">
-      ARTISTS
+      APRICOT
     </h2>
 
 
     <div class="artists-caption">
-      TAP AN ARTIST TO DISCOVER THEIR STORY & MUSIC
+      MUSIC · MEMORIES · AFTER SCHOOL
     </div>
 
 
     <div class="artists-grid">
 
 
-      <!-- 01 -->
-
       <div
         class="artist-card"
         data-artist="0"
       >
 
+
         <div class="artist-image">
+
 
           <img
             src="images/artist-01.png"
-            alt="本屋敷 縁"
+            alt="apricot"
           >
 
-          <div class="artist-time">
-            16:30
-          </div>
 
           <div class="artist-genre-tag">
-            DANCE POP
+            J-POP
           </div>
+
 
           <div class="artist-overlay">
 
             <h3 class="artist-name">
-              本屋敷 縁
+              apricot
             </h3>
 
           </div>
+
 
         </div>
 
 
         <div class="artist-info">
 
+
           <div class="artist-track-label">
             FEATURED TRACK
           </div>
 
+
           <div class="artist-track-name">
-            Green flame
+            The Place I Return To
           </div>
+
 
           <div class="artist-open">
 
@@ -3274,302 +3076,15 @@
 
           </div>
 
-        </div>
-
-      </div>
-
-
-      <!-- 02 -->
-
-      <div
-        class="artist-card"
-        data-artist="1"
-      >
-
-        <div class="artist-image">
-
-          <img
-            src="images/artist-02.png"
-            alt="田楽良介"
-          >
-
-          <div class="artist-time">
-            17:15
-          </div>
-
-          <div class="artist-genre-tag">
-            DANCE POP
-          </div>
-
-          <div class="artist-overlay">
-
-            <h3 class="artist-name">
-              田楽良介
-            </h3>
-
-          </div>
 
         </div>
 
-
-        <div class="artist-info">
-
-          <div class="artist-track-label">
-            FEATURED TRACK
-          </div>
-
-          <div class="artist-track-name">
-            Run through the night
-          </div>
-
-          <div class="artist-open">
-
-            DISCOVER
-
-            <span class="artist-open-arrow">
-              →
-            </span>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <!-- 03 -->
-
-      <div
-        class="artist-card"
-        data-artist="2"
-      >
-
-        <div class="artist-image">
-
-          <img
-            src="images/artist-03.png"
-            alt="もぶうさ"
-          >
-
-          <div class="artist-time">
-            18:00
-          </div>
-
-          <div class="artist-genre-tag">
-            J-POP IDOL
-          </div>
-
-          <div class="artist-overlay">
-
-            <h3 class="artist-name">
-              もぶうさ
-            </h3>
-
-          </div>
-
-        </div>
-
-
-        <div class="artist-info">
-
-          <div class="artist-track-label">
-            FEATURED TRACK
-          </div>
-
-          <div class="artist-track-name">
-            カートに乗って出発進行！
-          </div>
-
-          <div class="artist-open">
-
-            DISCOVER
-
-            <span class="artist-open-arrow">
-              →
-            </span>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <!-- 04 -->
-
-      <div
-        class="artist-card"
-        data-artist="3"
-      >
-
-        <div class="artist-image">
-
-          <img
-            src="images/artist-04.png"
-            alt="ヴェレーノ"
-          >
-
-          <div class="artist-time">
-            18:45
-          </div>
-
-          <div class="artist-genre-tag">
-            UNKNOWN
-          </div>
-
-          <div class="artist-overlay">
-
-            <h3 class="artist-name">
-              ヴェレーノ
-            </h3>
-
-          </div>
-
-        </div>
-
-
-        <div class="artist-info">
-
-          <div class="artist-track-label">
-            FEATURED TRACK
-          </div>
-
-          <div class="artist-track-name">
-            Veleno
-          </div>
-
-          <div class="artist-open">
-
-            DISCOVER
-
-            <span class="artist-open-arrow">
-              →
-            </span>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <!-- 05 -->
-
-      <div
-        class="artist-card"
-        data-artist="4"
-      >
-
-        <div class="artist-image">
-
-          <img
-            src="images/artist-05.png"
-            alt="田楽麻美"
-          >
-
-          <div class="artist-time">
-            19:30
-          </div>
-
-          <div class="artist-genre-tag">
-            PUNK ROCK
-          </div>
-
-          <div class="artist-overlay">
-
-            <h3 class="artist-name">
-              田楽麻美
-            </h3>
-
-          </div>
-
-        </div>
-
-
-        <div class="artist-info">
-
-          <div class="artist-track-label">
-            FEATURED TRACK
-          </div>
-
-          <div class="artist-track-name">
-            クズな私の輪郭
-          </div>
-
-          <div class="artist-open">
-
-            DISCOVER
-
-            <span class="artist-open-arrow">
-              →
-            </span>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <!-- 06 -->
-
-      <div
-        class="artist-card"
-        data-artist="5"
-      >
-
-        <div class="artist-image">
-
-          <img
-            src="images/artist-06.png"
-            alt="サドキエル"
-          >
-
-          <div class="artist-time">
-            20:30
-          </div>
-
-          <div class="artist-genre-tag">
-            DANCE POP
-          </div>
-
-          <div class="artist-overlay">
-
-            <h3 class="artist-name">
-              サドキエル
-            </h3>
-
-          </div>
-
-        </div>
-
-
-        <div class="artist-info">
-
-          <div class="artist-track-label">
-            FEATURED TRACK
-          </div>
-
-          <div class="artist-track-name">
-            fake
-          </div>
-
-          <div class="artist-open">
-
-            DISCOVER
-
-            <span class="artist-open-arrow">
-              →
-            </span>
-
-          </div>
-
-        </div>
 
       </div>
 
 
     </div>
+
 
   </section>
 
@@ -3610,7 +3125,7 @@
           >
 
           <div class="modal-hero-label">
-            SUMMER FES 2026
+            apricot
           </div>
 
         </div>
@@ -3644,11 +3159,6 @@
           <div
             class="modal-genre"
             id="modalGenre"
-          ></div>
-
-          <div
-            class="modal-time"
-            id="modalTime"
           ></div>
 
         </div>
@@ -3777,198 +3287,33 @@
 
     const artists = [
 
-
       {
 
         name:
-          "本屋敷 縁",
+          "apricot",
 
         alias:
-          "BOOKMAN / ブックマン",
+          "",
 
         genre:
-          "DANCE POP",
-
-        time:
-          "16:30",
+          "J-POP",
 
         accent:
-          "#62ff9b",
+          "#f4b6a6",
 
         description:
-          "広島県の不良高校生、幼いころ両親が離婚し、母親に育てられるが、家庭環境は荒れ気味。高校に入るとモンスターとして有名だった田楽良介（でんがく りょうすけ）と出会い、何度かの衝突の後に意気投合する。",
+          "Coming Soon",
 
         track:
-          "Green flame",
+          "The Place I Return To",
 
         image:
           "images/artist-01-main.png",
 
         music:
-          "music/artist-01.mp3"
-
-      },
-
-
-      {
-
-        name:
-          "田楽良介",
-
-        alias:
-          "DENSUKE / デンスケ",
-
-        genre:
-          "DANCE POP",
-
-        time:
-          "17:15",
-
-        accent:
-          "#73b7ff",
-
-        description:
-          "広島県の不良高校生、無口で無愛想、喧嘩は無敗。両親は良介が産まれてすぐに離婚、父親は母親と良介を残して姿を消した。母親は寂しさからか知らない男をよく家に呼び度々トラブルとなる。腹違いの妹と弟を守るためにDV義父を意識不明にさせて警察沙汰になる。その頃から父親殺しやモンスターなどの異名が付く。",
-
-        track:
-          "Run through the night",
-
-        image:
-          "images/artist-02-main.png",
-
-        music:
-          "music/artist-02.mp3"
-
-      },
-
-
-      {
-
-        name:
-          "もぶうさ",
-
-        alias:
-          "",
-
-        genre:
-          "J-POP IDOL SONG",
-
-        time:
-          "18:00",
-
-        accent:
-          "#ff82d8",
-
-        description:
-          "ピンク色のツインテールに、ウサ耳が特徴的な女の子。発言は小馬鹿にするような言葉遣いが多く、生意気だが少し寂しがりやな一面もある。高飛車に見える態度は、かまってほしいという気持ちの裏返し……かも？",
-
-        track:
-          "カートに乗って出発進行！",
-
-        image:
-          "images/artist-03-main.png",
-
-        music:
-          "music/artist-03.mp3"
-
-      },
-
-
-      {
-
-        name:
-          "ヴェレーノ",
-
-        alias:
-          "",
-
-        genre:
-          "UNKNOWN",
-
-        time:
-          "18:45",
-
-        accent:
-          "#c78cff",
-
-        description:
-          "厳しい環境で競争率の高いお受験を乗り越えて来たインテリ系お嬢様。大学を卒業するまでは全てが順位！順位！順位！高い成績を取る事だけが評価を受ける人生だった。\n\n“人は順位の檻に飼われる家畜”\n“努力は美徳ではない、ただの飢えた競争”\n“笑顔は虚飾、正しさは毒”\n\nいつしか彼女の思考は毒に染まっていく。",
-
-        track:
-          "Veleno",
-
-        image:
-          "images/artist-04-main.png",
-
-        music:
-          "music/artist-04.mp3"
-
-      },
-
-
-      {
-
-        name:
-          "田楽麻美",
-
-        alias:
-          "",
-
-        genre:
-          "PUNK ROCK",
-
-        time:
-          "19:30",
-
-        accent:
-          "#ff6f79",
-
-        description:
-          "物心付く前から家族はバラバラ。福太という腹違いの兄と母親の3人暮らしで育つ。実はもう一人兄が居るのだが、母親と福太はその事を話してはくれなかった。家にも何処にも居場所が無く、いつしかギターは麻美の“逃げ場所”になった。",
-
-        track:
-          "クズな私の輪郭",
-
-        image:
-          "images/artist-05-main.png",
-
-        music:
-          "music/artist-05.mp3"
-
-      },
-
-
-      {
-
-        name:
-          "サドキエル",
-
-        alias:
-          "",
-
-        genre:
-          "DANCE POP",
-
-        time:
-          "20:30",
-
-        accent:
-          "#89efff",
-
-        description:
-          "SECRET",
-
-        track:
-          "fake",
-
-        image:
-          "images/artist-06-main.png",
-
-        music:
-          "music/artist-06.mp3"
+          "music/ann.mp3"
 
       }
-
 
     ];
 
@@ -4010,12 +3355,6 @@
     const modalGenre =
       document.getElementById(
         "modalGenre"
-      );
-
-
-    const modalTime =
-      document.getElementById(
-        "modalTime"
       );
 
 
@@ -4075,7 +3414,6 @@
       seconds
     ) {
 
-
       if (
         !Number.isFinite(
           seconds
@@ -4101,13 +3439,15 @@
 
       return (
         minutes
-        + ":"
-        + String(
-            secs
-          ).padStart(
-            2,
-            "0"
-          )
+        +
+        ":"
+        +
+        String(
+          secs
+        ).padStart(
+          2,
+          "0"
+        )
       );
 
     }
@@ -4184,12 +3524,6 @@
 
       modalGenre.textContent =
         artist.genre;
-
-
-      modalTime.textContent =
-        artist.time
-        +
-        " · MAIN STAGE";
 
 
       modalDescription.textContent =
@@ -4482,12 +3816,12 @@
 
 
     /* =====================================
-       ★ 共通スクロールREVEAL
+       SCROLL REVEAL
     ===================================== */
 
     const revealTargets =
       document.querySelectorAll(
-        ".reveal-item, .schedule-item, .artist-card"
+        ".reveal-item, .memory-photo, .artist-card"
       );
 
 
@@ -4551,7 +3885,7 @@
 
 
     /* =====================================
-       PARALLAX
+       PARALLAX ELEMENTS
     ===================================== */
 
     const skyDay =
@@ -4620,6 +3954,10 @@
       );
 
 
+    /* =====================================
+       CLAMP
+    ===================================== */
+
     function clamp(
       value,
       min,
@@ -4638,9 +3976,12 @@
 
       );
 
-
     }
 
+
+    /* =====================================
+       PARALLAX
+    ===================================== */
 
     function updateParallax() {
 
@@ -4665,7 +4006,9 @@
         );
 
 
-      /* SKY */
+      /* =====================================
+         SKY
+      ====================================== */
 
       const sunsetAmount =
         clamp(
@@ -4707,7 +4050,9 @@
         nightAmount;
 
 
-      /* CLOUDS */
+      /* =====================================
+         CLOUDS
+      ====================================== */
 
       cloudsWrapper.style.transform =
         `translateY(
@@ -4735,7 +4080,9 @@
         )`;
 
 
-      /* BACKGROUND */
+      /* =====================================
+         SCHOOL BACKGROUND
+      ====================================== */
 
       backgroundWrapper.style.transform =
         `translateY(
@@ -4763,7 +4110,9 @@
         backgroundFade;
 
 
-      /* STAGE */
+      /* =====================================
+         SCHOOL
+      ====================================== */
 
       const stageHeight =
         stageWrapper.offsetHeight;
@@ -4791,7 +4140,9 @@
         )`;
 
 
-      /* AUDIENCE */
+      /* =====================================
+         GIRL / BICYCLE
+      ====================================== */
 
       const audiencePhase =
         clamp(
@@ -4867,7 +4218,9 @@
         )`;
 
 
-      /* SUN */
+      /* =====================================
+         SUN
+      ====================================== */
 
       sun.style.transform =
         `translateY(
@@ -4893,7 +4246,9 @@
         );
 
 
-      /* MOON */
+      /* =====================================
+         MOON
+      ====================================== */
 
       moon.style.opacity =
         clamp(
@@ -4909,7 +4264,9 @@
         );
 
 
-      /* STARS */
+      /* =====================================
+         STARS
+      ====================================== */
 
       stars.style.opacity =
         clamp(
@@ -4925,7 +4282,9 @@
         );
 
 
-      /* ARTISTS以降 */
+      /* =====================================
+         AFTER PARALLAX
+      ====================================== */
 
       if (
         scrollY
@@ -4984,6 +4343,10 @@
 
     }
 
+
+    /* =====================================
+       EVENTS
+    ===================================== */
 
     window.addEventListener(
       "scroll",
